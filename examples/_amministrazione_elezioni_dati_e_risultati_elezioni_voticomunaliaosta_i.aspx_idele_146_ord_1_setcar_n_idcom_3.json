@@ -1,0 +1,186 @@
+{
+    "nomeComune": "Comune sconosciuto",
+    "elettori": 28467,
+    "votanti": 18259,
+    "affluenzaPercent": 64.14,
+    "schedeBianche": 841,
+    "schedeBianchePercent": 4.61,
+    "schedeNulle": 1060,
+    "schedeNullePercent": 5.81,
+    "coalizioni": [
+        {
+            "sindaco": "NUTI Gianni",
+            "viceSindaco": "BORRE Josette",
+            "votiEsclusivi": 596,
+            "votiLista": 5765,
+            "votiTotali": 6361,
+            "percentualeVoti": 38.89,
+            "votiContestati": 0,
+            "seggi": 18,
+            "simboliUrl": [
+                "simboli\/146_3_04.gif",
+                "simboli\/146_3_05.gif",
+                "simboli\/146_3_06.gif"
+            ]
+        },
+        {
+            "sindaco": "GIRARDINI Giovanni",
+            "viceSindaco": "BALBIS Roberta Carla",
+            "votiEsclusivi": 0,
+            "votiLista": 3961,
+            "votiTotali": 3961,
+            "percentualeVoti": 24.21,
+            "votiContestati": 0,
+            "seggi": 4,
+            "simboliUrl": [
+                "simboli\/146_3_10.gif"
+            ]
+        },
+        {
+            "sindaco": "TOGNI Sergio Roberto",
+            "viceSindaco": "GIORDANO Bruno",
+            "votiEsclusivi": 182,
+            "votiLista": 3098,
+            "votiTotali": 3280,
+            "percentualeVoti": 20.05,
+            "votiContestati": 0,
+            "seggi": 3,
+            "simboliUrl": [
+                "simboli\/146_3_07.gif",
+                "simboli\/146_3_08.gif"
+            ]
+        },
+        {
+            "sindaco": "LAURENCET Paolo Attilio",
+            "viceSindaco": "FAVRE Renato",
+            "votiEsclusivi": 174,
+            "votiLista": 1793,
+            "votiTotali": 1967,
+            "percentualeVoti": 12.02,
+            "votiContestati": 0,
+            "seggi": 2,
+            "simboliUrl": [
+                "simboli\/146_3_02.gif",
+                "simboli\/146_3_03.gif"
+            ]
+        },
+        {
+            "sindaco": "TRENTIN Bruno",
+            "viceSindaco": "RAPPAZZO Francesco",
+            "votiEsclusivi": 0,
+            "votiLista": 461,
+            "votiTotali": 461,
+            "percentualeVoti": 2.82,
+            "votiContestati": 0,
+            "seggi": 0,
+            "simboliUrl": [
+                "simboli\/146_3_01.gif"
+            ]
+        },
+        {
+            "sindaco": "STATTI Francesco",
+            "viceSindaco": "ORTOLANO Dario",
+            "votiEsclusivi": 0,
+            "votiLista": 328,
+            "votiTotali": 328,
+            "percentualeVoti": 2.01,
+            "votiContestati": 0,
+            "seggi": 0,
+            "simboliUrl": [
+                "simboli\/146_3_09.gif"
+            ]
+        }
+    ],
+    "listeDettaglio": [
+        {
+            "nomeLista": "RENAISSANCE VALLÉE D'AOSTE",
+            "voti": 3961,
+            "percentualeVoti": 25.71,
+            "votiContestati": 0,
+            "seggi": 4,
+            "simboloUrl": "simboli\/146_3_10.gif",
+            "preferencesUrl": "VotiPreferenze_i.aspx?idele=146&ord=1&setcar=n&idcom=3&idsez=0&idlis=10"
+        },
+        {
+            "nomeLista": "PROGETTO CIVICO PROGRESSISTA",
+            "voti": 3539,
+            "percentualeVoti": 22.97,
+            "votiContestati": 0,
+            "seggi": 11,
+            "simboloUrl": "simboli\/146_3_05.gif",
+            "preferencesUrl": "VotiPreferenze_i.aspx?idele=146&ord=1&setcar=n&idcom=3&idsez=0&idlis=5"
+        },
+        {
+            "nomeLista": "LEGA TOGNI SINDACO",
+            "voti": 2968,
+            "percentualeVoti": 19.27,
+            "votiContestati": 0,
+            "seggi": 1,
+            "simboloUrl": "simboli\/146_3_07.gif",
+            "preferencesUrl": "VotiPreferenze_i.aspx?idele=146&ord=1&setcar=n&idcom=3&idsez=0&idlis=7"
+        },
+        {
+            "nomeLista": "UNION VALDÔTAINE",
+            "voti": 1483,
+            "percentualeVoti": 9.63,
+            "votiContestati": 0,
+            "seggi": 5,
+            "simboloUrl": "simboli\/146_3_04.gif",
+            "preferencesUrl": "VotiPreferenze_i.aspx?idele=146&ord=1&setcar=n&idcom=3&idsez=0&idlis=4"
+        },
+        {
+            "nomeLista": "FRATELLI D'ITALIA",
+            "voti": 919,
+            "percentualeVoti": 5.97,
+            "votiContestati": 0,
+            "seggi": 0,
+            "simboloUrl": "simboli\/146_3_02.gif",
+            "preferencesUrl": "VotiPreferenze_i.aspx?idele=146&ord=1&setcar=n&idcom=3&idsez=0&idlis=2"
+        },
+        {
+            "nomeLista": "FORZA ITALIA BERLUSCONI PER AOSTA",
+            "voti": 874,
+            "percentualeVoti": 5.67,
+            "votiContestati": 0,
+            "seggi": 0,
+            "simboloUrl": "simboli\/146_3_03.gif",
+            "preferencesUrl": "VotiPreferenze_i.aspx?idele=146&ord=1&setcar=n&idcom=3&idsez=0&idlis=3"
+        },
+        {
+            "nomeLista": "ALLIANCE VALDÔTAINE",
+            "voti": 743,
+            "percentualeVoti": 4.82,
+            "votiContestati": 0,
+            "seggi": 2,
+            "simboloUrl": "simboli\/146_3_06.gif",
+            "preferencesUrl": "VotiPreferenze_i.aspx?idele=146&ord=1&setcar=n&idcom=3&idsez=0&idlis=6"
+        },
+        {
+            "nomeLista": "POTERE AL POPOLO",
+            "voti": 461,
+            "percentualeVoti": 2.99,
+            "votiContestati": 0,
+            "seggi": 0,
+            "simboloUrl": "simboli\/146_3_01.gif",
+            "preferencesUrl": "VotiPreferenze_i.aspx?idele=146&ord=1&setcar=n&idcom=3&idsez=0&idlis=1"
+        },
+        {
+            "nomeLista": "PCI",
+            "voti": 328,
+            "percentualeVoti": 2.13,
+            "votiContestati": 0,
+            "seggi": 0,
+            "simboloUrl": "simboli\/146_3_09.gif",
+            "preferencesUrl": "VotiPreferenze_i.aspx?idele=146&ord=1&setcar=n&idcom=3&idsez=0&idlis=9"
+        },
+        {
+            "nomeLista": "AUTONOMIA E LIBERTÀ - AUTONOMIE ET LIBERTÉ - PER TOGNI SINDACO",
+            "voti": 130,
+            "percentualeVoti": 0.84,
+            "votiContestati": 0,
+            "seggi": 0,
+            "simboloUrl": "simboli\/146_3_08.gif",
+            "preferencesUrl": "VotiPreferenze_i.aspx?idele=146&ord=1&setcar=n&idcom=3&idsez=0&idlis=8"
+        }
+    ]
+}

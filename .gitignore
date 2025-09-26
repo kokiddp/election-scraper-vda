@@ -1,0 +1,27 @@
+# Composer dependencies
+/vendor/
+
+# PHPUnit cache & coverage
+.phpunit.result.cache
+.phpunit.cache/
+coverage/
+
+# Logs & temp files
+*.log
+*.tmp
+*.cache
+/cache/
+/tmp/
+
+# IDE & editor folders
+/.idea/
+/.vscode/
+*.code-workspace
+nbproject/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Generated artifacts
+examples/parsed_output.json

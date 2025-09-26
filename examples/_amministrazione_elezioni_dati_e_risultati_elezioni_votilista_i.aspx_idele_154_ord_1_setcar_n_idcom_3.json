@@ -1,0 +1,32 @@
+{
+    "nomeComune": "AOSTA",
+    "elettori": 28467,
+    "votanti": 13075,
+    "affluenzaPercent": 45.93,
+    "schedeBianche": 81,
+    "schedeBianchePercent": 0.62,
+    "schedeNulle": 256,
+    "schedeNullePercent": 1.96,
+    "schedeScrutinate": 0,
+    "schedeScrutinatePercent": 0,
+    "candidati": [
+        {
+            "sindaco": "NUTI Gianni",
+            "viceSindaco": "BORRE Josette",
+            "nomeLista": "UNION VALDÔTAINE \/ PROGETTO CIVICO PROGRESSISTA \/ ALLIANCE VALDÔTAINE",
+            "voti": 6794,
+            "percentualeVoti": 53.34,
+            "votiContestati": 0,
+            "simboloUrl": "simboli\/154_3_04.gif"
+        },
+        {
+            "sindaco": "GIRARDINI Giovanni",
+            "viceSindaco": "BALBIS Roberta Carla",
+            "nomeLista": "RINASCIMENTO VALLE D'AOSTA - RENAISSANCE VALLÉE D'AOSTE",
+            "voti": 5944,
+            "percentualeVoti": 46.66,
+            "votiContestati": 0,
+            "simboloUrl": "simboli\/154_3_10.gif"
+        }
+    ]
+}

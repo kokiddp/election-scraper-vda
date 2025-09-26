@@ -1,0 +1,190 @@
+{
+    "nomeComune": "COURMAYEUR",
+    "elettori": 2315,
+    "votanti": 1343,
+    "affluenzaPercent": 58.01,
+    "schedeBianche": 12,
+    "schedeBianchePercent": 0.89,
+    "schedeNulle": 43,
+    "schedeNullePercent": 3.2,
+    "liste": [
+        {
+            "nomeLista": "SìAmo Courmayeur",
+            "nomeSindaco": "ROTA Roberto",
+            "nomeViceSindaco": "PERRIN Federico Marco",
+            "votiSindaco": 846,
+            "percentualeVoti": 65.68,
+            "simboloUrl": "simboli\/147_22_01.gif",
+            "candidati": [
+                {
+                    "nome": "PASSINO Nicole",
+                    "voti": 203,
+                    "ruolo": "C",
+                    "eletto": true
+                },
+                {
+                    "nome": "MOTTA Alberto",
+                    "voti": 191,
+                    "ruolo": "C",
+                    "eletto": true
+                },
+                {
+                    "nome": "TRUCHET Ephrem",
+                    "voti": 181,
+                    "ruolo": "C",
+                    "eletto": true
+                },
+                {
+                    "nome": "ROLLA Sauvage",
+                    "voti": 177,
+                    "ruolo": "C",
+                    "eletto": true
+                },
+                {
+                    "nome": "DI ADDARIO Alessia",
+                    "voti": 163,
+                    "ruolo": "C",
+                    "eletto": true
+                },
+                {
+                    "nome": "PERRONE Alessandro",
+                    "voti": 159,
+                    "ruolo": "C",
+                    "eletto": true
+                },
+                {
+                    "nome": "VOYAT Iris Hélène",
+                    "voti": 156,
+                    "ruolo": "C",
+                    "eletto": true
+                },
+                {
+                    "nome": "REY Massimo",
+                    "voti": 151,
+                    "ruolo": "C",
+                    "eletto": true
+                },
+                {
+                    "nome": "SAVOYE André",
+                    "voti": 135,
+                    "ruolo": "C",
+                    "eletto": true
+                },
+                {
+                    "nome": "SANGINETO Alessia",
+                    "voti": 122,
+                    "ruolo": "",
+                    "eletto": false
+                },
+                {
+                    "nome": "GEX Mattia",
+                    "voti": 118,
+                    "ruolo": "",
+                    "eletto": false
+                },
+                {
+                    "nome": "CREMA Joël Gabriele",
+                    "voti": 98,
+                    "ruolo": "",
+                    "eletto": false
+                },
+                {
+                    "nome": "MOSCA BARBERIS Ettore",
+                    "voti": 61,
+                    "ruolo": "",
+                    "eletto": false
+                }
+            ],
+            "vincitrice": true
+        },
+        {
+            "nomeLista": "Esprit Courmayeur",
+            "nomeSindaco": "MISEROCCHI Stefano",
+            "nomeViceSindaco": "PENCO Sara",
+            "votiSindaco": 442,
+            "percentualeVoti": 34.32,
+            "simboloUrl": "simboli\/147_22_02.gif",
+            "candidati": [
+                {
+                    "nome": "ROVEYAZ Diletta Maria",
+                    "voti": 152,
+                    "ruolo": "C",
+                    "eletto": true
+                },
+                {
+                    "nome": "GEX Luciano",
+                    "voti": 90,
+                    "ruolo": "C",
+                    "eletto": true
+                },
+                {
+                    "nome": "SCARSELLA Fabio",
+                    "voti": 74,
+                    "ruolo": "",
+                    "eletto": false
+                },
+                {
+                    "nome": "DEZOPPIS Marco",
+                    "voti": 70,
+                    "ruolo": "",
+                    "eletto": false
+                },
+                {
+                    "nome": "LIPORACE Antonio",
+                    "voti": 58,
+                    "ruolo": "",
+                    "eletto": false
+                },
+                {
+                    "nome": "DUNCAN Rachel Mary",
+                    "voti": 57,
+                    "ruolo": "",
+                    "eletto": false
+                },
+                {
+                    "nome": "CANOSA Giulia Antonietta",
+                    "voti": 53,
+                    "ruolo": "",
+                    "eletto": false
+                },
+                {
+                    "nome": "MEYSEILLER Marcello Francesco",
+                    "voti": 47,
+                    "ruolo": "",
+                    "eletto": false
+                },
+                {
+                    "nome": "CHAMEN Michel",
+                    "voti": 44,
+                    "ruolo": "",
+                    "eletto": false
+                },
+                {
+                    "nome": "PERRIER Patrick Arturo Gildo",
+                    "voti": 44,
+                    "ruolo": "",
+                    "eletto": false
+                },
+                {
+                    "nome": "SIGNORELLI Luca Mario",
+                    "voti": 41,
+                    "ruolo": "",
+                    "eletto": false
+                },
+                {
+                    "nome": "NOTARIANNI Felice",
+                    "voti": 36,
+                    "ruolo": "",
+                    "eletto": false
+                },
+                {
+                    "nome": "FORTUNATO Ilaria",
+                    "voti": 35,
+                    "ruolo": "",
+                    "eletto": false
+                }
+            ],
+            "vincitrice": false
+        }
+    ]
+}

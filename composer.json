@@ -1,0 +1,22 @@
+{
+    "name": "kokiddp/election-scraper-vda",
+    "type": "library",
+    "description": "Libreria per estrarre i dati delle elezioni dal sito della Regione Valle d'Aosta",
+    "require": {
+        "php": ">=7.4",
+        "guzzlehttp/guzzle": "^7.0",
+        "psr/log": "^3.0",
+        "psr/simple-cache": "^3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6"
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "autoload": {
+        "psr-4": {
+            "ElectionScraperVdA\\": "src/"
+        }
+    }
+}

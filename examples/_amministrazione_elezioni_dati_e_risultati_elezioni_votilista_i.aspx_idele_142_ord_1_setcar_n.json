@@ -1,0 +1,98 @@
+[
+    {
+        "nomeLista": "ALLIANCE VALDÔTAINE - STELLA ALPINA - ITALIA VIVA",
+        "voti": 5881,
+        "percentuale": 8.87,
+        "votiContestati": 0,
+        "seggi": 4,
+        "simboloUrl": "simboli\/142_01.gif"
+    },
+    {
+        "nomeLista": "PROGETTO CIVICO PROGRESSISTA",
+        "voti": 10106,
+        "percentuale": 15.25,
+        "votiContestati": 0,
+        "seggi": 7,
+        "simboloUrl": "simboli\/142_02.gif"
+    },
+    {
+        "nomeLista": "VDA LIBRA - PARTITO ANIMALISTA ITALIANO",
+        "voti": 1085,
+        "percentuale": 1.64,
+        "votiContestati": 0,
+        "seggi": 0,
+        "simboloUrl": "simboli\/142_03.gif"
+    },
+    {
+        "nomeLista": "RINASCIMENTO VALLE D'AOSTA - RENAISSANCE VALLÉE D'AOSTE",
+        "voti": 3289,
+        "percentuale": 4.96,
+        "votiContestati": 0,
+        "seggi": 0,
+        "simboloUrl": "simboli\/142_04.gif"
+    },
+    {
+        "nomeLista": "CENTRO DESTRA VALLE D'AOSTA",
+        "voti": 3761,
+        "percentuale": 5.68,
+        "votiContestati": 0,
+        "seggi": 0,
+        "simboloUrl": "simboli\/142_05.gif"
+    },
+    {
+        "nomeLista": "PAS",
+        "voti": 1876,
+        "percentuale": 2.83,
+        "votiContestati": 0,
+        "seggi": 0,
+        "simboloUrl": "simboli\/142_06.gif"
+    },
+    {
+        "nomeLista": "UNION VALDÔTAINE",
+        "voti": 10470,
+        "percentuale": 15.8,
+        "votiContestati": 0,
+        "seggi": 7,
+        "simboloUrl": "simboli\/142_07.gif"
+    },
+    {
+        "nomeLista": "LEGA SALVINI VALLÉE D'AOSTE",
+        "voti": 15841,
+        "percentuale": 23.91,
+        "votiContestati": 0,
+        "seggi": 11,
+        "simboloUrl": "simboli\/142_08.gif"
+    },
+    {
+        "nomeLista": "POUR L'AUTONOMIE PER L'AUTONOMIA",
+        "voti": 4212,
+        "percentuale": 6.36,
+        "votiContestati": 0,
+        "seggi": 3,
+        "simboloUrl": "simboli\/142_09.gif"
+    },
+    {
+        "nomeLista": "MOVIMENTO CINQUE STELLE",
+        "voti": 2589,
+        "percentuale": 3.91,
+        "votiContestati": 0,
+        "seggi": 0,
+        "simboloUrl": "simboli\/142_10.gif"
+    },
+    {
+        "nomeLista": "VALLE D'AOSTA FUTURA",
+        "voti": 1760,
+        "percentuale": 2.66,
+        "votiContestati": 0,
+        "seggi": 0,
+        "simboloUrl": "simboli\/142_11.gif"
+    },
+    {
+        "nomeLista": "VALLÉE D'AOSTE UNIE",
+        "voti": 5396,
+        "percentuale": 8.14,
+        "votiContestati": 0,
+        "seggi": 3,
+        "simboloUrl": "simboli\/142_12.gif"
+    }
+]

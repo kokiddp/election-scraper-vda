@@ -1,0 +1,2550 @@
+<!--
+  File di esempio per testare il parser del referendum 187.
+  Copiare qui l'HTML della pagina dei risultati (ad esempio
+  "https://elezioni.regione.vda.it/elezioni/VotiReferendum_i.aspx?idele=187&ord=1&setcar=n")
+  per consentire a examples/test.php di analizzare il documento localmente.
+-->
+  
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="ctl00_Head1">	<link rel="shortcut icon" href="/wwwtemplate/2012/img/favicon.ico" type="image/x-icon" >
+	<link href="/wwwtemplate/2012/css/stile.css" media="screen, projection, print" rel="stylesheet" type="text/css" >
+	<!--[if IE 6]>
+	<link href="/wwwtemplate/2012/css/ie6.css" rel="stylesheet" type="text/css" >
+	<![endif]-->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript">
+	/*<![CDATA[*/
+	(function (){
+		if ( false ){ //!window.jQuery){
+			var head = document.getElementsByTagName("head")[0]; 
+			jqlocal = document.createElement('script');
+			jqlocal.type = "text/javascript";
+			jqlocal.src = "/wwwtemplate/2012/js/jquery-1.7.1.min.js";
+			head.appendChild(jqlocal);
+		}; // load if google not online...
+	})();
+	/*]]>*/
+	</script>
+	<script type="text/javascript" src="/wwwtemplate/2012/js/i18nstrings.js"></script>
+	<!-- script menu -->
+	<script type="text/javascript" src="/wwwtemplate/2012/js/jquery.hoverIntent.minified.js"></script>
+	<script type="text/javascript" src="/wwwtemplate/2012/js/superfish.js"></script>
+	<!-- script elementi scrollable-->
+	<script type="text/javascript" src="/wwwtemplate/2012/js/jquery-ui-1.6.custom.min.js"></script>
+	<!-- script tabs-->
+	<script type="text/javascript" src="/wwwtemplate/2012/js/jquery.scrollable-1.0.2.min.js"></script>
+	<!-- fancy box  -->
+	<script type="text/javascript" src="/wwwtemplate/2012/js/jquery.fancybox-1.3.4/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="/wwwtemplate/2012/js/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	
+	
+	<link rel="stylesheet" type="text/css" href="/wwwtemplate/2012/js/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.css" media="screen" >
+	<!-- main actions -->
+	<script type="text/javascript" src="/wwwtemplate/2012/js/main.js"></script><title>
+	Referendum 2025 - Voti
+</title></head>
+<body>
+<form name="aspnetForm" method="post" action="./VotiReferendum_i.aspx?idele=187&amp;ord=1&amp;setcar=n" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJODkyMTA4Mjk3ZGRhz7L53sbA1z4wDIDr6HdRGrMiMJxKYDbAxNBEHOh0oA==" />
+</div>
+
+<link href="css/elezioni.css" type="text/css" rel="stylesheet" >
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="6A83467D" >
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAOa7wQ0D6fG+NJzhyJByT7T7Z3MxWWGrex5mZAP+Mv02Heqmpzm8XbCRkulMexm0B80NMXe1iOitHPWLpXZKzsACS+Hcyee1alzbVnfS4x1oQ==" >
+</div>
+<div id="main">
+    
+<div id="cont_header">
+	<div id="header">
+		<div id="header_title">
+			<h1 class="site_title"><span id="ctl00_intestazione_lblTitle">Sito ufficiale della Regione Autonoma Valle d'Aosta</span></h1>
+		</div>
+		<div id="logo">
+            <a id="ctl00_intestazione_hLinkHomepage" title="Homepage - Regione Valle d&#39;Aosta" href="/default_i.asp"><img id="ctl00_intestazione_imgLogo" src="../wwwtemplate/2012/img/logo_stampa.gif" alt="Sito ufficiale della Regione Autonoma Valle d&#39;Aosta" style="border-width:0px;" /></a>
+		</div>
+		<div id="index" class="nocssdisplay">
+			<h3><span id="ctl00_intestazione_lblLinkAr">Link Accesso Rapido</span></h3>
+			<ul>
+				<li><a id="ctl00_intestazione_hLinkContenuti" title="Contenuti" href="../#content">Contenuti</a></li>
+				<li><a id="ctl00_intestazione_hLinkServ" title="Menù contestuale" href="../#contextual_menu">Menù contestuale</a></li>
+				<li><a id="ctl00_intestazione_hLinkMenuNav" title="Menù principale" href="../#main_menu">Menù principale</a></li>
+				<li><a id="ctl00_intestazione_hLinkMenuLin" title="Menù lingue" href="../#langs_menu">Menù lingue</a></li>
+				<li><a id="ctl00_intestazione_hLinkServ2" title="Menù servizi" href="../#services_menu">Menù servizi</a></li>
+				<li><a id="ctl00_intestazione_hLinkRicerca" title="Ricerca" href="../#search_box">Ricerca</a></li>
+			</ul>
+		</div>
+        <div id="header_menus">
+			<div id="langs_menu">
+                <div id="langs_menu_sub">
+					<h3 class="nocssdisplay"><span id="ctl00_intestazione_lblMenuLin">Menù lingue</span></h3>
+                    <ul><li class="selected"><a href="/elezioni/VotiReferendum_i.aspx?idele=187&ord=1&setcar=n">Italiano</a></li> <li class="last"><a href="/elezioni/VotiReferendum_f.aspx?idele=187&ord=1&setcar=n">Français</a></li></ul>
+                </div>
+            </div>
+            			<div id="services_menu">
+				<h3 class="nocssdisplay">Men� servizi</h3>
+				<ul>
+					<li>
+						<a href="https://www.regione.vda.it/informazioni_utili/pec_i.aspx">Posta certificata</a>
+					</li>
+					<li>
+						<a href="https://www.regione.vda.it/intranet/default_i.asp">Intranet</a>
+					</li>
+					<li class="last">
+						<a href="https://www.regione.vda.it/informazioni_utili/contatti_i.asp">Contatti</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+    </div>
+</div>
+<div id="main_nav_container">
+	<div id="main_nav">
+		<div id="main_nav_bar">
+            <div id="main_menu">
+	<h3 class="nocssdisplay">Men&ugrave; principale</h3>
+	<ul id="topnav" class="sf-menu">
+		<li>
+			<a href="#"><span class="upr">La Regione</span></a>
+			<div class="sub">
+				<div class="sub2">
+					<ul>
+						<li><a href="https://www.regione.vda.it/amministrazione/default_i.asp"><span class="vm1">Amministrazione</span></a></li>
+						<li><a href="https://www.regione.vda.it/amministrazionetrasparente/default_i.aspx"><span class="vm1">Amministrazione trasparente</span></a></li>
+						<li><a href="https://www.regione.vda.it/cug/default_i.aspx"><span class="vm1">Comitato Unico di Garanzia</span></a></li>
+						<li><a href="https://consultazionedelibere.regione.vda.it/amministrazione/Delibere/default_i.aspx"><span class="vm1">Archivio deliberazioni</span></a></li>
+						<li><a href="https://www.regione.vda.it/amministrazione/elezioni/default_i.asp"><span class="vm1">Elezioni</span></a></li>
+						<li><a href="https://www.regione.vda.it/amministrazione/struttura/default_i.asp"><span class="vm1">Mappa Amministrazione</span></a></li>
+						<li><a href="https://consultazionepd.regione.vda.it/amministrazione/atti/default_i.aspx"><span class="vm1">Archivio provvedimenti dirigenziali</span></a></li>
+						<li class="last"><a href="https://www.regione.vda.it/rapporti_istituzionali/default_i.aspx"><span class="vm1">Rapporti istituzionali</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</li>
+		<li class="ssx">
+			<a href="#" title="Elenco siti tematici"><span class="upr">Canali tematici </span></a> 
+			<div class="sub trecol">
+				<div class="sub2">
+					<ul>
+						<li><a href="https://www.regione.vda.it/affari_legislativi/default_i.asp"><span class="vm1">Affari legislativi e aiuti di Stato</span></a></li> 
+						<li><a href="https://www.regione.vda.it/agricoltura/default_i.asp"><span class="vm1">Agricoltura</span></a></li>
+						<li><a href="https://www.regione.vda.it/artigianato/default_i.asp"><span class="vm1">Artigianato di tradizione</span></a></li>
+						<li><a href="https://www.regione.vda.it/finanze/default_i.asp"><span class="vm1">Bilancio, finanze e patrimonio</span></a></li>
+						<li><a href="https://www.regione.vda.it/contratti_pubblici/default_i.aspx"><span class="vm1">Contratti pubblici, Programmazione e Osservatorio</span></a></li>
+						<li><a href="https://www.regione.vda.it/coopsviluppo/default_i.asp"><span class="vm1">Cooperazione allo sviluppo</span></a></li>
+						<li><a href="https://www.regione.vda.it/corpoforestale/default_i.asp"><span class="vm1">Corpo Forestale della Valle d'Aosta</span></a></li>
+						<li><a href="https://www.regione.vda.it/vvf/default_i.asp"><span class="vm1">Corpo Valdostano dei Vigili del Fuoco</span></a></li>
+						<li><a href="https://www.regione.vda.it/cultura/default_i.asp"><span class="vm1">Cultura</span></a></li>
+						<li><a href="http://centraleunica.regione.vda.it"  class="targetblank"><span class="vm1">CUS - Centrale Unica del Soccorso</span></a></li>
+						<li><a href="https://www.regione.vda.it/energia/default_i.asp">		<span class="vm1">Energia		</span></a></li>
+						<li><a href="https://www.regione.vda.it/enti_locali/default_i.asp">	<span class="vm1">Enti locali	</span></a></li>
+						<li><a href="https://www.regione.vda.it/europa">						<span class="vm1">Europa		</span></a></li>
+						</ul>
+					<ul>
+						
+						<li><a href="https://www.regione.vda.it/europa/europe_direct/default_i.asp"><span class="vm1">Europe Direct</span></a></li>
+						<li><a href="https://www.regione.vda.it/formazione_personale_regionale/default_i.aspx"><span class="vm1">Formazione del personale regionale</span></a></li>
+						
+						<li><a href="https://www.regione.vda.it/innovazione"><span class="vm1">Innovazione</span></a></li>
+						<li><a href="https://www.regione.vda.it/istruzione/default_i.asp"><span class="vm1">Istruzione</span></a></li>
+						<li><a href="https://www.regione.vda.it/lavoro/default_i.aspx"><span class="vm1">Lavoro</span></a></li>
+						<li><a href="https://meteo.regione.vda.it" class="targetblank"><span class="vm1">Meteo in Valle d'Aosta</span></a></li>
+						<li><a href="https://www.regione.vda.it/nuvv/default_i.asp"><span class="vm1">NUVV - Valutazione e verifica<br>degli investimenti pubblici</span></a></li>
+						<li><a href="https://www.regione.vda.it/operepubbliche/default_i.asp"><span class="vm1">Opere pubbliche</span></a></li>
+						<li><a href="https://www.regione.vda.it/giovani/default_i.asp"><span class="vm1">Politiche giovanili</span></a></li>
+						<li><a href="https://www.regione.vda.it/servsociali/default_i.asp"><span class="vm1">Politiche sociali</span></a></li>
+						<li><a href="https://www.regione.vda.it/Portale_imprese/default_i.asp"><span class="vm1">Portale imprese industriali, artigiane e societ&agrave; cooperative</span></a></li>
+						<li><a href="https://www.regione.vda.it/protezione_civile/default_i.asp"><span class="vm1">Protezione civile</span></a></li>
+							</ul>
+					<ul>
+						
+						<li><a href="https://www.regione.vda.it/risorsenaturali/default_i.asp"><span class="vm1">Risorse naturali</span></a></li>
+						<li><a href="https://www.regione.vda.it/sanita/default_i.asp"><span class="vm1">Sanit&agrave;</span></a></li>
+						<li><a href="https://www.regione.vda.it/serviziocivile/default_i.asp"><span class="vm1">Servizio civile</span></a></li>
+						<li><a href="https://www.regione.vda.it/servizio_volontario_europeo/default_i.aspx"><span class="vm1">Servizio volontario europeo</span></a></li>
+						<li><a href="https://www.regione.vda.it/sport_provv_impianti/default_i.aspx"><span class="vm1">Sport - Provvidenze per attivit&agrave; sportive</span></a></li>
+						<li><a href="https://www.regione.vda.it/statistica/default_i.asp"><span class="vm1">Statistica</span></a></li>
+						<li><a href="https://www.regione.vda.it/territorio/default_i.asp"><span class="vm1">Territorio e ambiente</span></a></li>
+						<li><a href="https://www.regione.vda.it/trasporti/default_i.asp"><span class="vm1">Trasporti</span></a></li>
+						<li><a href="https://www.regione.vda.it/finanze/tributi/default_i.asp"><span class="vm1">Tributi regionali e bollo auto</span></a></li>
+						<li><a href="https://www.regione.vda.it/asstur/default_i.asp"><span class="vm1">Turismo</span></a></li>
+						<li><a href="https://www.lovevda.it/it"><span class="vm1">Turismo informazioni Lovevda</span></a></li>
+						<li class="last"><a href="https://www.regione.vda.it/pressevda/default_i.asp"><span class="vm1">Ufficio Stampa - PresseVdA</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</li>
+		<li>
+			<a href="#"><span class="upr">Servizi</span></a>
+			<div class="sub duecol">
+				<div class="sub2">
+					<ul>
+						<li><a href="https://www.regione.vda.it/trasporti/Agevolazioni_tariffarie/Universitari/default_i.aspx"><span class="vm1">Agevolazioni Trasporti studenti universitari</span></a></li>
+						<li><a href="https://biblio.regione.vda.it/"><span class="vm1">Biblioteche</span></a></li>
+						<li><a href="http://biglietteriecastelli.invallee.it/MidaTicketAOSTA/AOL/AOL_Default.aspx" class="targetblank"><span class="vm1">Biglietteria online Castelli</span></a></li>									
+						<li><a href="https://crrs.regione.vda.it"><span class="vm1">Comitato Regionale Relazioni Sindacali (CRRS)</span></a></li>
+						<li><a href="https://www.regione.vda.it/consigliera_parita/default_i.asp"><span class="vm1">Consigliera di Parit&agrave;</span></a></li>
+						<li><a href="https://www.regione.vda.it/giudicedipace/default_i.aspx"><span class="vm1">Giudice di pace</span></a></li>
+						<li><a href="https://www.regione.vda.it/statistica/statistiche_per_argomento/prezzi/default_i.asp"><span class="vm1">Inflazione e prezzi al consumo</span></a></li>
+						<li><a href="https://www.regione.vda.it/informazioni_utili/default_i.aspx"><span class="vm1">Info utili</span></a></li>
+						<li><a href="https://www.regione.vda.it/sanita/prevenzione/sicurezza_alimentare/allerta/elenco_i.asp"><span class="vm1">Informazioni su Allerta Alimentare</span></a></li>
+						
+						<li class="last"><a href="https://www.regione.vda.it/informazioni_utili/elenconewsletter_i.aspx"><span class="vm1">Newsletters</span></a></li>
+						
+					</ul>
+					<ul>
+						
+						<li><a href="https://www.regione.vda.it/questionario/default_i.asp"><span class="vm1">Opinioni e proposte sui servizi Web</span></a></li>
+						<li><a href="https://www.regione.vda.it/statistica/default_i.asp"><span class="vm1">Osservatorio economico e sociale</span></a></li>
+						<li><a href="https://www.regione.vda.it/osservatoriorifiuti"><span class="vm1">Osservatorio rifiuti</span></a></li>
+						<li><a href="https://www.regione.vda.it/servsociali/invalidita_civile_i/invalidi_i/default_i.asp"><span class="vm1">Servizi per invalidi civili</span></a></li>
+						<li><a href="https://www.lovevda.it/turismo/prima_di_partire/dovesiamo/airport_transfer_i.asp"><span class="vm1">Servizio prenotazione navette per aeroporti </span></a></li>
+						<li><a href="https://www.regione.vda.it/prefettura/immigrazione/sportellounicoimmigrazione/default_i.aspx"><span class="vm1">Sportello unico  Immigrazione</span></a></li>
+						<li><a href="https://www.regione.vda.it/energia/centro_osservazione_energia/sportello_informativo/default_i.asp"><span class="vm1">Sportello Informativo Energia</span></a></li>
+						<li><a href="http://www.sportellounico.vda.it/homepages.asp?l=1" class="targetblank"><span class="vm1">Sportello Unico degli enti locali</span></a></li>
+						<li class="last"><a href="https://www.regione.vda.it/TesseraSanitaria_CartaNazionaledeiServizi/default_i.asp"><span class="vm1">Tessera Sanitaria - Carta nazionale dei servizi</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</li>
+		<li>
+			<a href="#"><span class="upr">Avvisi e documenti</span></a>
+			<div class="sub">
+				<div class="sub2">
+					<ul>					
+						<li><a href="https://appweb.regione.vda.it/dbweb/albonotiziario.nsf" title="Albo Pretorio"><span class="vm1">Albo notiziario</span></a></li>
+						<li><a href="https://appweb.regione.vda.it/DBWeb/territorio/avvisidemanioidrico.nsf/Avvisi?openform&amp;l=ita"><span class="vm1">Avvisi demanio idrico</span></a></li>
+						<li><a href="https://appweb.regione.vda.it/dbweb/presidenza/avvisiincarichi.nsf"><span class="vm1">Avvisi di incarico</span></a></li>
+						<li><a href="https://appweb.regione.vda.it/DBWeb/bandigara/BandiGar.nsf/BandiInScadenza?openform&l=ITA"><span class="vm1">Bandi e avvisi</span></a></li>
+						<li><a href="https://www.regione.vda.it/affari_legislativi/bollettino_ufficiale/default_i.asp"><span class="vm1">Bollettino ufficiale</span></a></li>
+						<li><a href="https://www.regione.vda.it/amministrazione/concorsi/default_i.asp"><span class="vm1">Concorsi</span></a></li> 
+						<li><a href="https://www.regione.vda.it/contratti_pubblici/elenchi_operatori_economici/default_i.aspx"><span class="vm1">Elenchi di operatori economici</span></a></li>
+						<li><a href="https://appweb.regione.vda.it/DBWeb/espropri/espropri.nsf/PRESENTAZIONE?openform&amp;l=ITA"><span class="vm1">Espropri</span></a></li>
+						<li class="last"><a href="https://www.regione.vda.it/offerte_lavoro/default_i.aspx"><span class="vm1">Offerte di lavoro</span></a></li>
+						</ul>
+				</div>
+			</div>
+		</li>
+		<li>
+			<a href="#"><span class="upr">Opportunit&agrave; dalle societ&agrave; partecipate</span></a>
+			<div class="sub">
+				<div class="sub2">
+					<ul>					
+						<li><a href="https://www.regione.vda.it/societa_partecipate/amministratori__organi_controllo_i.aspx"><span class="vm1">Amministratori e organi di controllo</span></a></li>
+						<li><a href="https://www.regione.vda.it/societa_partecipate/Assunzioni/default_i.aspx"><span class="vm1">Assunzioni</span></a></li>
+						<li><a href="https://www.regione.vda.it/societa_partecipate/Incarichi_consulenza_collaborazione/default_i.aspx"><span class="vm1">Incarichi di consulenza e collaborazione</span></a></li>
+						<li class="last"><a href="https://www.regione.vda.it/societa_partecipate/Elenco_operatori/default_i.aspx"><span class="vm1">Elenco operatori economici e esiti procedure</span></a></li>
+						
+					</ul>
+				</div>
+			</div>
+		</li>
+
+		
+	</ul>
+</div>
+<div id="nav_social">
+	
+	<div class="icon_social">
+		<a href="https://www.regione.vda.it/Social_network/facebook_i.asp" class="targetblank" ><img width="31" height="31" alt="Facebook" src="/wwwtemplate/2012/img/facebook.png" ></a>
+	</div>
+	<div class="icon_social">
+		<a href="https://www.youtube.com/RegVdA" class="targetblank" ><img width="31" height="31" alt="Youtube" src="/wwwtemplate/2012/img/youtube.png" ></a>
+	</div>
+	<div class="icon_social">
+		<a href="https://www.regione.vda.it/Social_network/twitter_i.asp" class="targetblank" ><img width="31" height="31" alt="Twitter" src="/wwwtemplate/2012/img/twitter.png" ></a>
+	</div>
+	<div class="icon_social">
+		<a href="https://www.regione.vda.it/Social_network/instagram_i.asp" class="targetblank" ><img width="31" height="31" alt="Instagram" src="/wwwtemplate/2012/img/instagram.png" ></a>
+	</div>
+	
+</div>
+            <div id="search_box">
+                <h3 class="nocssdisplay"><span id="ctl00_intestazione_lblRicerca">Ricerca</span> - <span id="ctl00_intestazione_lblCerca">cerca</span></h3>
+               <fieldset>
+				    <div class="ric_sx">
+			           <input name="ctl00$intestazione$txtRicerca" type="text" value="cerca" id="ctl00_intestazione_txtRicerca" class="txt_cerca" />
+                    </div><input type="submit" name="ctl00$intestazione$btnRicerca" value="" id="ctl00_intestazione_btnRicerca" class="btn_cerca" />
+                </fieldset>
+            </div>
+        </div>
+	</div>
+</div>
+    <hr class="nocssdisplay" >
+	<div id="content_container">
+		<div id="content">
+			<div>
+				<div id="primary_area_full">
+                    <div id="bread">
+<ul>
+<li><a href="http://www.regione.vda.it/amministrazione/elezioni/dati_e_risultati/default_i.asp">Dati e risultati</a></li>
+<li><a href="http://www.regione.vda.it/amministrazione/elezioni/dati_e_risultati/Risultati/default_i.aspx">Risultati</a></li>
+<li><a href="default_i.aspx?idele=187&amp;ord=1&amp;setcar=n">Referendum 2025</a></li>
+<li>Voti</li>
+</ul>
+</div>
+
+                    
+
+<h1 class="testi">Voti</h1>
+<div id="contentgc">
+    
+</div>
+                    
+	
+     <div id="ctl00_ContentPlaceHolderContenuto_divLogo" style="width:100%;">
+		<table>
+            <tr>
+                <td colspan="2" style="text-align:right; font-size:80%">
+                    RISULTATI UFFICIOSI
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+			<tr class="logo">
+				<td><img id="ctl00_ContentPlaceHolderContenuto_imgLogoMP" src="simboli/187_referendum2025.jpg" alt="Referendum 2025" style="border-width:0px;" /></td>
+				<td style="vertical-align:middle; width:100%; text-align:left">
+					<span class="titolo-elezione">Referendum 2025 - Cittadinanza italiana: Dimezzamento da 10 a 5 anni dei tempi di residenza legale in Italia dello straniero maggiorenne extracomunitario per la concessione della cittadinanza italiana</span><br >
+					<span class="titolo-elezione">Referendum 2025 - Cittadinanza italiana: Dimezzamento da 10 a 5 anni dei tempi di residenza legale in Italia dello straniero maggiorenne extracomunitario per la concessione della cittadinanza italiana</span>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+
+    <div id="ctl00_ContentPlaceHolderContenuto_MenuElezioni_pnlMenuElezioni" class="menu-elezioni">
+	
+    <a id="ctl00_ContentPlaceHolderContenuto_MenuElezioni_lnkAltriReferendum" href="ElencoReferendum_i.aspx?idele=187&amp;ord=1&amp;setcar=n">Tutti i referendum</a><a id="ctl00_ContentPlaceHolderContenuto_MenuElezioni_lnkAffluenza" href="DatiAffluenza_i.aspx?idele=187&amp;ord=1&amp;setcar=n">Affluenza</a><a id="ctl00_ContentPlaceHolderContenuto_MenuElezioni_lnkVoti" class="menu-elezioni-selezionato" href="VotiReferendum_i.aspx?idele=187&amp;ord=1&amp;setcar=n">Voti</a><a id="ctl00_ContentPlaceHolderContenuto_MenuElezioni_lnkCartina" href="Cartina_i.aspx?idele=187&amp;ord=1&amp;setcar=n"><img id="ctl00_ContentPlaceHolderContenuto_MenuElezioni_imgCartina" src="Immagini/Cartinap.png" style="border-width:0px;" /></a>
+    <div style="float:right">
+        
+    </div>
+
+</div>
+
+    
+
+	<div id="ctl00_ContentPlaceHolderContenuto_divRisultati">
+		<table class="tabella-dati" cellpadding="1" cellspacing="1" width="100%">
+			<tr style="display:none">
+				<td></td>
+				<td></td>
+				<td colspan ="4">Voti</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class="tabella-dati-header">
+				<td class="tabella-dati-separatore" colspan="3"></td>
+				<td class="tabella-dati-separatore" colspan ="2">Validi</td>
+				<td class="tabella-dati-separatore" colspan ="2">Provvisoriamente non assegnati</td>
+				<td class="tabella-dati-separatore" colspan="2"></td>
+			</tr>
+			<tr class="tabella-dati-header">
+				<td width="36%" class="tabella-dati-separatore">Comuni</td>
+				<td width="8%" class="tabella-dati-separatore">Elettori</td>
+				<td width="8%">Votanti</td>
+				<td width="8%" class="tabella-dati-separatore">S&#236;</td>
+				<td width="8%">No</td>
+				<td width="8%" class="tabella-dati-separatore">S&#236;</td>
+				<td width="8%">No</td>
+				<td width="8%" class="tabella-dati-separatore">Nulle</td>
+				<td width="8%">Bianche</td>
+			</tr>
+			<tr>
+				<td colspan="9">
+					&nbsp;
+				</td>
+			</tr>
+			<tr class="tabella-dati-header">
+				<td class="tabella-dati-separatore" colspan="9" style="text-align:left; font-size:120%">Valle d&#39;Aosta</td>
+			</tr>
+			<tr class="tabella-dati-riga-affluenza" style="font-size:120%">
+				<td rowspan="2" class="tabella-dati-separatore">150 su 150</td>
+                <td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">97.805</td>
+				<td class="tabella-affluenza-dato">28.391</td>
+				<td class="tabella-affluenza-dato tabella-dati-separatore">17.653</td>
+				<td class="tabella-affluenza-dato">9.829</td>
+				<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+				<td class="tabella-affluenza-dato">0</td>
+				<td class="tabella-affluenza-dato tabella-dati-separatore">291</td>
+				<td class="tabella-affluenza-dato">618</td>
+			</tr>
+			<tr class="tabella-dati-riga-affluenza" style="font-size:120%">
+                <td class="tabella-affluenza-dato" style="font-weight:bold">29,03%</td>
+				<td class="tabella-affluenza-dato tabella-dati-separatore" style="font-weight:bold">64,23%</td>
+				<td class="tabella-affluenza-dato" style="font-weight:bold">35,77%</td>
+				<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+				<td class="tabella-affluenza-dato">0,00%</td>
+				<td class="tabella-affluenza-dato tabella-dati-separatore">1,02%</td>
+				<td class="tabella-affluenza-dato">2,18%</td>
+			</tr>
+			<tr>
+				<td colspan="9">
+                    &nbsp;
+					
+				</td>
+			</tr>
+			<tr id="ctl00_ContentPlaceHolderContenuto_trAosta1" class="tabella-dati-header">
+	<td class="tabella-dati-separatore" colspan="9" style="text-align:left; font-size:120%">Aosta</td>
+</tr>
+
+			<tr id="ctl00_ContentPlaceHolderContenuto_trAosta2" class="tabella-dati-riga-affluenza">
+	<td rowspan="2" class="tabella-dati-separatore">38 su 38</td>
+	<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">26.278</td>
+	<td class="tabella-affluenza-dato">8.354</td>
+	<td class="tabella-affluenza-dato tabella-dati-separatore">5.576</td>
+	<td class="tabella-affluenza-dato">2.605</td>
+	<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+	<td class="tabella-affluenza-dato">0</td>
+	<td class="tabella-affluenza-dato tabella-dati-separatore">65</td>
+	<td class="tabella-affluenza-dato">108</td>
+</tr>
+
+			<tr id="ctl00_ContentPlaceHolderContenuto_trAosta3" class="tabella-dati-riga-affluenza">
+	<td class="tabella-affluenza-dato">31,79%</td>
+	<td class="tabella-affluenza-dato tabella-dati-separatore">68,16%</td>
+	<td class="tabella-affluenza-dato">31,84%</td>
+	<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+	<td class="tabella-affluenza-dato">0,00%</td>
+	<td class="tabella-affluenza-dato tabella-dati-separatore">0,78%</td>
+	<td class="tabella-affluenza-dato">1,29%</td>
+</tr>
+
+			<tr>
+				<td colspan="9">&nbsp;</td>
+			</tr>
+			<tr class="tabella-dati-header">
+				<td class="tabella-dati-separatore" colspan="9" style="text-align:left; font-size:120%">Comuni</td>
+			</tr>
+			
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">ALLEIN</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">177</td>
+						<td class="tabella-affluenza-dato">41</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">24</td>
+						<td class="tabella-affluenza-dato">16</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">1</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">23,16%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">60,00%</td>
+						<td class="tabella-affluenza-dato">40,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">2,44%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">ANTEY-SAINT-ANDR&#201;</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">442</td>
+						<td class="tabella-affluenza-dato">98</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">62</td>
+						<td class="tabella-affluenza-dato">31</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">2</td>
+						<td class="tabella-affluenza-dato">3</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">22,17%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">66,67%</td>
+						<td class="tabella-affluenza-dato">33,33%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">2,04%</td>
+						<td class="tabella-affluenza-dato">3,06%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">ARNAD</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">980</td>
+						<td class="tabella-affluenza-dato">280</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">160</td>
+						<td class="tabella-affluenza-dato">104</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">4</td>
+						<td class="tabella-affluenza-dato">12</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">28,57%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">60,61%</td>
+						<td class="tabella-affluenza-dato">39,39%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">1,43%</td>
+						<td class="tabella-affluenza-dato">4,29%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">ARVIER</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">650</td>
+						<td class="tabella-affluenza-dato">188</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">113</td>
+						<td class="tabella-affluenza-dato">67</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">8</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">28,92%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">62,78%</td>
+						<td class="tabella-affluenza-dato">37,22%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">4,26%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">AVISE</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">228</td>
+						<td class="tabella-affluenza-dato">100</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">49</td>
+						<td class="tabella-affluenza-dato">47</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">4</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">43,86%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">51,04%</td>
+						<td class="tabella-affluenza-dato">48,96%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">4,00%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">AYAS</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">1.057</td>
+						<td class="tabella-affluenza-dato">189</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">129</td>
+						<td class="tabella-affluenza-dato">57</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">1</td>
+						<td class="tabella-affluenza-dato">2</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">17,88%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">69,35%</td>
+						<td class="tabella-affluenza-dato">30,65%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,53%</td>
+						<td class="tabella-affluenza-dato">1,06%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">AYMAVILLES</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">1.643</td>
+						<td class="tabella-affluenza-dato">443</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">284</td>
+						<td class="tabella-affluenza-dato">141</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">10</td>
+						<td class="tabella-affluenza-dato">8</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">26,96%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">66,82%</td>
+						<td class="tabella-affluenza-dato">33,18%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">2,26%</td>
+						<td class="tabella-affluenza-dato">1,81%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">BARD</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">79</td>
+						<td class="tabella-affluenza-dato">30</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">21</td>
+						<td class="tabella-affluenza-dato">9</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">37,97%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">70,00%</td>
+						<td class="tabella-affluenza-dato">30,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">BIONAZ</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">180</td>
+						<td class="tabella-affluenza-dato">29</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">13</td>
+						<td class="tabella-affluenza-dato">15</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">1</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">16,11%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">46,43%</td>
+						<td class="tabella-affluenza-dato">53,57%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">3,45%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">BRISSOGNE</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">791</td>
+						<td class="tabella-affluenza-dato">215</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">132</td>
+						<td class="tabella-affluenza-dato">80</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">1</td>
+						<td class="tabella-affluenza-dato">2</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">27,18%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">62,26%</td>
+						<td class="tabella-affluenza-dato">37,74%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,47%</td>
+						<td class="tabella-affluenza-dato">0,93%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">BRUSSON</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">684</td>
+						<td class="tabella-affluenza-dato">156</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">93</td>
+						<td class="tabella-affluenza-dato">55</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">3</td>
+						<td class="tabella-affluenza-dato">5</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">22,81%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">62,84%</td>
+						<td class="tabella-affluenza-dato">37,16%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">1,92%</td>
+						<td class="tabella-affluenza-dato">3,21%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">CHALLAND-SAINT-ANSELME</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">566</td>
+						<td class="tabella-affluenza-dato">140</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">80</td>
+						<td class="tabella-affluenza-dato">54</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">2</td>
+						<td class="tabella-affluenza-dato">4</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">24,73%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">59,70%</td>
+						<td class="tabella-affluenza-dato">40,30%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">1,43%</td>
+						<td class="tabella-affluenza-dato">2,86%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">CHALLAND-SAINT-VICTOR</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">427</td>
+						<td class="tabella-affluenza-dato">115</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">62</td>
+						<td class="tabella-affluenza-dato">47</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">1</td>
+						<td class="tabella-affluenza-dato">5</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">26,93%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">56,88%</td>
+						<td class="tabella-affluenza-dato">43,12%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,87%</td>
+						<td class="tabella-affluenza-dato">4,35%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">CHAMBAVE</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">720</td>
+						<td class="tabella-affluenza-dato">249</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">151</td>
+						<td class="tabella-affluenza-dato">90</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">3</td>
+						<td class="tabella-affluenza-dato">5</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">34,58%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">62,66%</td>
+						<td class="tabella-affluenza-dato">37,34%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">1,20%</td>
+						<td class="tabella-affluenza-dato">2,01%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">CHAMOIS</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">92</td>
+						<td class="tabella-affluenza-dato">31</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">14</td>
+						<td class="tabella-affluenza-dato">14</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">3</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">33,70%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">50,00%</td>
+						<td class="tabella-affluenza-dato">50,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">9,68%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">CHAMPDEPRAZ</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">582</td>
+						<td class="tabella-affluenza-dato">146</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">61</td>
+						<td class="tabella-affluenza-dato">74</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">6</td>
+						<td class="tabella-affluenza-dato">5</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">25,09%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">45,19%</td>
+						<td class="tabella-affluenza-dato">54,81%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">4,11%</td>
+						<td class="tabella-affluenza-dato">3,42%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">CHAMPORCHER</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">326</td>
+						<td class="tabella-affluenza-dato">102</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">73</td>
+						<td class="tabella-affluenza-dato">25</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">1</td>
+						<td class="tabella-affluenza-dato">3</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">31,29%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">74,49%</td>
+						<td class="tabella-affluenza-dato">25,51%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,98%</td>
+						<td class="tabella-affluenza-dato">2,94%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">CHARVENSOD</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">1.948</td>
+						<td class="tabella-affluenza-dato">528</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">326</td>
+						<td class="tabella-affluenza-dato">184</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">3</td>
+						<td class="tabella-affluenza-dato">15</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">27,10%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">63,92%</td>
+						<td class="tabella-affluenza-dato">36,08%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,57%</td>
+						<td class="tabella-affluenza-dato">2,84%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">CH&#194;TILLON</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">3.469</td>
+						<td class="tabella-affluenza-dato">983</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">571</td>
+						<td class="tabella-affluenza-dato">368</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">21</td>
+						<td class="tabella-affluenza-dato">23</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">28,34%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">60,81%</td>
+						<td class="tabella-affluenza-dato">39,19%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">2,14%</td>
+						<td class="tabella-affluenza-dato">2,34%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">COGNE</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">1.070</td>
+						<td class="tabella-affluenza-dato">256</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">172</td>
+						<td class="tabella-affluenza-dato">72</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">4</td>
+						<td class="tabella-affluenza-dato">8</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">23,93%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">70,49%</td>
+						<td class="tabella-affluenza-dato">29,51%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">1,56%</td>
+						<td class="tabella-affluenza-dato">3,13%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">COURMAYEUR</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">2.061</td>
+						<td class="tabella-affluenza-dato">359</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">223</td>
+						<td class="tabella-affluenza-dato">123</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">2</td>
+						<td class="tabella-affluenza-dato">11</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">17,42%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">64,45%</td>
+						<td class="tabella-affluenza-dato">35,55%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,56%</td>
+						<td class="tabella-affluenza-dato">3,06%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">DONNAS</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">1.939</td>
+						<td class="tabella-affluenza-dato">661</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">418</td>
+						<td class="tabella-affluenza-dato">221</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">8</td>
+						<td class="tabella-affluenza-dato">14</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">34,09%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">65,41%</td>
+						<td class="tabella-affluenza-dato">34,59%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">1,21%</td>
+						<td class="tabella-affluenza-dato">2,12%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">DOUES</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">426</td>
+						<td class="tabella-affluenza-dato">112</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">58</td>
+						<td class="tabella-affluenza-dato">50</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">4</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">26,29%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">53,70%</td>
+						<td class="tabella-affluenza-dato">46,30%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">3,57%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">EMAR&#200;SE</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">187</td>
+						<td class="tabella-affluenza-dato">72</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">36</td>
+						<td class="tabella-affluenza-dato">35</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">1</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">38,50%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">50,70%</td>
+						<td class="tabella-affluenza-dato">49,30%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">1,39%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">ETROUBLES</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">371</td>
+						<td class="tabella-affluenza-dato">93</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">54</td>
+						<td class="tabella-affluenza-dato">38</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">1</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">25,07%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">58,70%</td>
+						<td class="tabella-affluenza-dato">41,30%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">1,08%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">F&#201;NIS</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">1.428</td>
+						<td class="tabella-affluenza-dato">414</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">237</td>
+						<td class="tabella-affluenza-dato">153</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">6</td>
+						<td class="tabella-affluenza-dato">18</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">28,99%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">60,77%</td>
+						<td class="tabella-affluenza-dato">39,23%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">1,45%</td>
+						<td class="tabella-affluenza-dato">4,35%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">FONTAINEMORE</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">352</td>
+						<td class="tabella-affluenza-dato">99</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">65</td>
+						<td class="tabella-affluenza-dato">28</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">2</td>
+						<td class="tabella-affluenza-dato">4</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">28,13%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">69,89%</td>
+						<td class="tabella-affluenza-dato">30,11%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">2,02%</td>
+						<td class="tabella-affluenza-dato">4,04%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">GABY</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">344</td>
+						<td class="tabella-affluenza-dato">101</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">56</td>
+						<td class="tabella-affluenza-dato">41</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">1</td>
+						<td class="tabella-affluenza-dato">3</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">29,36%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">57,73%</td>
+						<td class="tabella-affluenza-dato">42,27%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,99%</td>
+						<td class="tabella-affluenza-dato">2,97%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">GIGNOD</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">1.355</td>
+						<td class="tabella-affluenza-dato">375</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">243</td>
+						<td class="tabella-affluenza-dato">123</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">3</td>
+						<td class="tabella-affluenza-dato">6</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">27,68%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">66,39%</td>
+						<td class="tabella-affluenza-dato">33,61%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,80%</td>
+						<td class="tabella-affluenza-dato">1,60%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">GRESSAN</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">2.681</td>
+						<td class="tabella-affluenza-dato">862</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">550</td>
+						<td class="tabella-affluenza-dato">282</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">6</td>
+						<td class="tabella-affluenza-dato">24</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">32,15%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">66,11%</td>
+						<td class="tabella-affluenza-dato">33,89%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,70%</td>
+						<td class="tabella-affluenza-dato">2,78%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">GRESSONEY-LA-TRINIT&#201;</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">254</td>
+						<td class="tabella-affluenza-dato">84</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">45</td>
+						<td class="tabella-affluenza-dato">35</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">4</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">33,07%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">56,25%</td>
+						<td class="tabella-affluenza-dato">43,75%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">4,76%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">GRESSONEY-SAINT-JEAN</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">618</td>
+						<td class="tabella-affluenza-dato">137</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">97</td>
+						<td class="tabella-affluenza-dato">33</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">2</td>
+						<td class="tabella-affluenza-dato">5</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">22,17%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">74,62%</td>
+						<td class="tabella-affluenza-dato">25,38%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">1,46%</td>
+						<td class="tabella-affluenza-dato">3,65%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">H&#212;NE</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">921</td>
+						<td class="tabella-affluenza-dato">348</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">198</td>
+						<td class="tabella-affluenza-dato">140</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">6</td>
+						<td class="tabella-affluenza-dato">4</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">37,79%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">58,58%</td>
+						<td class="tabella-affluenza-dato">41,42%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">1,72%</td>
+						<td class="tabella-affluenza-dato">1,15%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">INTROD</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">505</td>
+						<td class="tabella-affluenza-dato">172</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">108</td>
+						<td class="tabella-affluenza-dato">58</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">2</td>
+						<td class="tabella-affluenza-dato">4</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">34,06%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">65,06%</td>
+						<td class="tabella-affluenza-dato">34,94%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">1,16%</td>
+						<td class="tabella-affluenza-dato">2,33%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">ISSIME</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">292</td>
+						<td class="tabella-affluenza-dato">92</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">45</td>
+						<td class="tabella-affluenza-dato">45</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">2</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">31,51%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">50,00%</td>
+						<td class="tabella-affluenza-dato">50,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">2,17%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">ISSOGNE</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">1.056</td>
+						<td class="tabella-affluenza-dato">305</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">164</td>
+						<td class="tabella-affluenza-dato">130</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">2</td>
+						<td class="tabella-affluenza-dato">9</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">28,88%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">55,78%</td>
+						<td class="tabella-affluenza-dato">44,22%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,66%</td>
+						<td class="tabella-affluenza-dato">2,95%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">JOVEN&#199;AN</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">563</td>
+						<td class="tabella-affluenza-dato">166</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">108</td>
+						<td class="tabella-affluenza-dato">55</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">2</td>
+						<td class="tabella-affluenza-dato">1</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">29,48%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">66,26%</td>
+						<td class="tabella-affluenza-dato">33,74%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">1,20%</td>
+						<td class="tabella-affluenza-dato">0,60%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">LA MAGDELEINE</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">93</td>
+						<td class="tabella-affluenza-dato">41</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">21</td>
+						<td class="tabella-affluenza-dato">15</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">3</td>
+						<td class="tabella-affluenza-dato">2</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">44,09%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">58,33%</td>
+						<td class="tabella-affluenza-dato">41,67%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">7,32%</td>
+						<td class="tabella-affluenza-dato">4,88%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">LA SALLE</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">1.581</td>
+						<td class="tabella-affluenza-dato">339</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">192</td>
+						<td class="tabella-affluenza-dato">140</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">1</td>
+						<td class="tabella-affluenza-dato">6</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">21,44%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">57,83%</td>
+						<td class="tabella-affluenza-dato">42,17%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,29%</td>
+						<td class="tabella-affluenza-dato">1,77%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">LA THUILE</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">616</td>
+						<td class="tabella-affluenza-dato">104</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">45</td>
+						<td class="tabella-affluenza-dato">53</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">1</td>
+						<td class="tabella-affluenza-dato">5</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">16,88%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">45,92%</td>
+						<td class="tabella-affluenza-dato">54,08%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,96%</td>
+						<td class="tabella-affluenza-dato">4,81%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">LILLIANES</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">328</td>
+						<td class="tabella-affluenza-dato">107</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">57</td>
+						<td class="tabella-affluenza-dato">46</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">1</td>
+						<td class="tabella-affluenza-dato">3</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">32,62%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">55,34%</td>
+						<td class="tabella-affluenza-dato">44,66%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,93%</td>
+						<td class="tabella-affluenza-dato">2,80%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">MONTJOVET</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">1.463</td>
+						<td class="tabella-affluenza-dato">381</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">211</td>
+						<td class="tabella-affluenza-dato">156</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">5</td>
+						<td class="tabella-affluenza-dato">9</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">26,04%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">57,49%</td>
+						<td class="tabella-affluenza-dato">42,51%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">1,31%</td>
+						<td class="tabella-affluenza-dato">2,36%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">MORGEX</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">1.621</td>
+						<td class="tabella-affluenza-dato">390</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">248</td>
+						<td class="tabella-affluenza-dato">129</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">3</td>
+						<td class="tabella-affluenza-dato">10</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">24,06%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">65,78%</td>
+						<td class="tabella-affluenza-dato">34,22%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,77%</td>
+						<td class="tabella-affluenza-dato">2,56%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">NUS</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">2.353</td>
+						<td class="tabella-affluenza-dato">761</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">477</td>
+						<td class="tabella-affluenza-dato">261</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">9</td>
+						<td class="tabella-affluenza-dato">14</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">32,34%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">64,63%</td>
+						<td class="tabella-affluenza-dato">35,37%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">1,18%</td>
+						<td class="tabella-affluenza-dato">1,84%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">OLLOMONT</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">135</td>
+						<td class="tabella-affluenza-dato">47</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">27</td>
+						<td class="tabella-affluenza-dato">18</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">2</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">34,81%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">60,00%</td>
+						<td class="tabella-affluenza-dato">40,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">4,26%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">OYACE</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">167</td>
+						<td class="tabella-affluenza-dato">36</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">21</td>
+						<td class="tabella-affluenza-dato">10</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">1</td>
+						<td class="tabella-affluenza-dato">4</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">21,56%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">67,74%</td>
+						<td class="tabella-affluenza-dato">32,26%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">2,78%</td>
+						<td class="tabella-affluenza-dato">11,11%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">PERLOZ</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">376</td>
+						<td class="tabella-affluenza-dato">149</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">80</td>
+						<td class="tabella-affluenza-dato">56</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">9</td>
+						<td class="tabella-affluenza-dato">4</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">39,63%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">58,82%</td>
+						<td class="tabella-affluenza-dato">41,18%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">6,04%</td>
+						<td class="tabella-affluenza-dato">2,68%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">POLLEIN</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">1.149</td>
+						<td class="tabella-affluenza-dato">336</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">193</td>
+						<td class="tabella-affluenza-dato">123</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">6</td>
+						<td class="tabella-affluenza-dato">14</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">29,24%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">61,08%</td>
+						<td class="tabella-affluenza-dato">38,92%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">1,79%</td>
+						<td class="tabella-affluenza-dato">4,17%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">PONTBOSET</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">152</td>
+						<td class="tabella-affluenza-dato">56</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">38</td>
+						<td class="tabella-affluenza-dato">17</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">1</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">36,84%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">69,09%</td>
+						<td class="tabella-affluenza-dato">30,91%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">1,79%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">PONTEY</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">635</td>
+						<td class="tabella-affluenza-dato">197</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">113</td>
+						<td class="tabella-affluenza-dato">77</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">2</td>
+						<td class="tabella-affluenza-dato">5</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">31,02%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">59,47%</td>
+						<td class="tabella-affluenza-dato">40,53%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">1,02%</td>
+						<td class="tabella-affluenza-dato">2,54%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">PONT-SAINT-MARTIN</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">2.716</td>
+						<td class="tabella-affluenza-dato">879</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">524</td>
+						<td class="tabella-affluenza-dato">327</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">8</td>
+						<td class="tabella-affluenza-dato">20</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">32,36%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">61,57%</td>
+						<td class="tabella-affluenza-dato">38,43%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,91%</td>
+						<td class="tabella-affluenza-dato">2,28%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">PR&#201;-SAINT-DIDIER</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">762</td>
+						<td class="tabella-affluenza-dato">151</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">84</td>
+						<td class="tabella-affluenza-dato">63</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">1</td>
+						<td class="tabella-affluenza-dato">3</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">19,82%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">57,14%</td>
+						<td class="tabella-affluenza-dato">42,86%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,66%</td>
+						<td class="tabella-affluenza-dato">1,99%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">QUART</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">3.319</td>
+						<td class="tabella-affluenza-dato">910</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">564</td>
+						<td class="tabella-affluenza-dato">316</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">9</td>
+						<td class="tabella-affluenza-dato">21</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">27,42%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">64,09%</td>
+						<td class="tabella-affluenza-dato">35,91%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,99%</td>
+						<td class="tabella-affluenza-dato">2,31%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">RH&#202;MES-NOTRE-DAME</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">65</td>
+						<td class="tabella-affluenza-dato">21</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">16</td>
+						<td class="tabella-affluenza-dato">5</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">32,31%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">76,19%</td>
+						<td class="tabella-affluenza-dato">23,81%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">RH&#202;MES-SAINT-GEORGES</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">146</td>
+						<td class="tabella-affluenza-dato">57</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">30</td>
+						<td class="tabella-affluenza-dato">22</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">1</td>
+						<td class="tabella-affluenza-dato">4</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">39,04%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">57,69%</td>
+						<td class="tabella-affluenza-dato">42,31%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">1,75%</td>
+						<td class="tabella-affluenza-dato">7,02%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">ROISAN</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">821</td>
+						<td class="tabella-affluenza-dato">237</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">155</td>
+						<td class="tabella-affluenza-dato">79</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">2</td>
+						<td class="tabella-affluenza-dato">1</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">28,87%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">66,24%</td>
+						<td class="tabella-affluenza-dato">33,76%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,84%</td>
+						<td class="tabella-affluenza-dato">0,42%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">SAINT-CHRISTOPHE</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">2.783</td>
+						<td class="tabella-affluenza-dato">892</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">539</td>
+						<td class="tabella-affluenza-dato">324</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">8</td>
+						<td class="tabella-affluenza-dato">21</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">32,05%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">62,46%</td>
+						<td class="tabella-affluenza-dato">37,54%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,90%</td>
+						<td class="tabella-affluenza-dato">2,35%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">SAINT-DENIS</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">301</td>
+						<td class="tabella-affluenza-dato">74</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">33</td>
+						<td class="tabella-affluenza-dato">35</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">3</td>
+						<td class="tabella-affluenza-dato">3</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">24,58%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">48,53%</td>
+						<td class="tabella-affluenza-dato">51,47%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">4,05%</td>
+						<td class="tabella-affluenza-dato">4,05%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">SAINT-MARCEL</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">1.049</td>
+						<td class="tabella-affluenza-dato">339</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">201</td>
+						<td class="tabella-affluenza-dato">127</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">3</td>
+						<td class="tabella-affluenza-dato">8</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">32,32%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">61,28%</td>
+						<td class="tabella-affluenza-dato">38,72%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,88%</td>
+						<td class="tabella-affluenza-dato">2,36%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">SAINT-NICOLAS</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">255</td>
+						<td class="tabella-affluenza-dato">76</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">51</td>
+						<td class="tabella-affluenza-dato">24</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">1</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">29,80%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">68,00%</td>
+						<td class="tabella-affluenza-dato">32,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">1,32%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">SAINT-OYEN</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">158</td>
+						<td class="tabella-affluenza-dato">71</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">43</td>
+						<td class="tabella-affluenza-dato">25</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">3</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">44,94%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">63,24%</td>
+						<td class="tabella-affluenza-dato">36,76%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">4,23%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">SAINT-PIERRE</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">2.499</td>
+						<td class="tabella-affluenza-dato">694</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">455</td>
+						<td class="tabella-affluenza-dato">216</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">7</td>
+						<td class="tabella-affluenza-dato">16</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">27,77%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">67,81%</td>
+						<td class="tabella-affluenza-dato">32,19%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">1,01%</td>
+						<td class="tabella-affluenza-dato">2,31%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">SAINT-RH&#201;MY-EN-BOSSES</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">278</td>
+						<td class="tabella-affluenza-dato">65</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">37</td>
+						<td class="tabella-affluenza-dato">23</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">5</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">23,38%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">61,67%</td>
+						<td class="tabella-affluenza-dato">38,33%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">7,69%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">SAINT-VINCENT</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">3.509</td>
+						<td class="tabella-affluenza-dato">896</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">539</td>
+						<td class="tabella-affluenza-dato">329</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">11</td>
+						<td class="tabella-affluenza-dato">17</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">25,53%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">62,10%</td>
+						<td class="tabella-affluenza-dato">37,90%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">1,23%</td>
+						<td class="tabella-affluenza-dato">1,90%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">SARRE</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">3.875</td>
+						<td class="tabella-affluenza-dato">1.166</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">759</td>
+						<td class="tabella-affluenza-dato">386</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">10</td>
+						<td class="tabella-affluenza-dato">11</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">30,09%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">66,29%</td>
+						<td class="tabella-affluenza-dato">33,71%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,86%</td>
+						<td class="tabella-affluenza-dato">0,94%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">TORGNON</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">469</td>
+						<td class="tabella-affluenza-dato">109</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">57</td>
+						<td class="tabella-affluenza-dato">45</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">7</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">23,24%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">55,88%</td>
+						<td class="tabella-affluenza-dato">44,12%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">6,42%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">VALGRISENCHE</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">163</td>
+						<td class="tabella-affluenza-dato">76</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">45</td>
+						<td class="tabella-affluenza-dato">27</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">4</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">46,63%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">62,50%</td>
+						<td class="tabella-affluenza-dato">37,50%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">5,26%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">VALPELLINE</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">469</td>
+						<td class="tabella-affluenza-dato">162</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">96</td>
+						<td class="tabella-affluenza-dato">60</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">1</td>
+						<td class="tabella-affluenza-dato">5</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">34,54%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">61,54%</td>
+						<td class="tabella-affluenza-dato">38,46%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,62%</td>
+						<td class="tabella-affluenza-dato">3,09%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">VALSAVARENCHE</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">132</td>
+						<td class="tabella-affluenza-dato">51</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">31</td>
+						<td class="tabella-affluenza-dato">13</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">1</td>
+						<td class="tabella-affluenza-dato">6</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">38,64%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">70,45%</td>
+						<td class="tabella-affluenza-dato">29,55%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">1,96%</td>
+						<td class="tabella-affluenza-dato">11,76%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">VALTOURNENCHE</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">1.662</td>
+						<td class="tabella-affluenza-dato">270</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">142</td>
+						<td class="tabella-affluenza-dato">115</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">4</td>
+						<td class="tabella-affluenza-dato">9</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">16,25%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">55,25%</td>
+						<td class="tabella-affluenza-dato">44,75%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">1,48%</td>
+						<td class="tabella-affluenza-dato">3,33%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">VERRAYES</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">1.018</td>
+						<td class="tabella-affluenza-dato">305</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">172</td>
+						<td class="tabella-affluenza-dato">120</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">1</td>
+						<td class="tabella-affluenza-dato">12</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">29,96%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">58,90%</td>
+						<td class="tabella-affluenza-dato">41,10%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,33%</td>
+						<td class="tabella-affluenza-dato">3,93%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">VERR&#200;S</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">1.971</td>
+						<td class="tabella-affluenza-dato">549</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">313</td>
+						<td class="tabella-affluenza-dato">215</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">7</td>
+						<td class="tabella-affluenza-dato">14</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">27,85%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">59,28%</td>
+						<td class="tabella-affluenza-dato">40,72%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">1,28%</td>
+						<td class="tabella-affluenza-dato">2,55%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+					<tr class="tabella-dati-riga-affluenza">
+						<td rowspan="2" class="tabella-dati-separatore">VILLENEUVE</td>
+						<td rowspan="2" class="tabella-affluenza-dato tabella-dati-separatore">974</td>
+						<td class="tabella-affluenza-dato">272</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">173</td>
+						<td class="tabella-affluenza-dato">87</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0</td>
+						<td class="tabella-affluenza-dato">0</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">4</td>
+						<td class="tabella-affluenza-dato">8</td>
+					</tr>
+					<tr class="tabella-dati-riga-affluenza">
+                        <td class="tabella-affluenza-dato">27,93%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">66,54%</td>
+						<td class="tabella-affluenza-dato">33,46%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">0,00%</td>
+						<td class="tabella-affluenza-dato">0,00%</td>
+						<td class="tabella-affluenza-dato tabella-dati-separatore">1,47%</td>
+						<td class="tabella-affluenza-dato">2,94%</td>
+					</tr>
+			        <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden"></td>
+			        </tr>
+                    <tr class="tabella-affluenza-separatore-comuni">
+				        <td colspan="9" style="height:0px; overflow:hidden; border-bottom: solid 1px #cccccc"></td>
+			        </tr>
+				
+		</table>
+	</div>
+	
+
+                </div>
+				<hr class="nocssdisplay" >
+				<div id="secondary_area">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+    <hr class="nocssdisplay" >
+    
+
+    <div id="footer_container">
+		<div id="footer">
+								<div id="footer_main_menu">
+						<div class="footer_main_menu_col">
+							<h3>La regione</h3>
+							<ul>
+								<li><a href="https://www.regione.vda.it/amministrazione/default_i.asp">Amministrazione</a></li>
+								<li><a href="https://www.regione.vda.it/amministrazionetrasparente/default_i.aspx">Amministrazione trasparente</a></li>
+								<li><a href="https://www.regione.vda.it/cug/default_i.aspx">Comitato Unico di Garanzia</a></li>
+								<li><a href="https://www.regione.vda.it/amministrazione/Delibere/default_i.aspx">Deliberazioni</a></li>
+								<li><a href="https://www.regione.vda.it/amministrazione/elezioni/default_i.asp">Elezioni</a></li>
+								<li><a href="https://www.regione.vda.it/amministrazione/struttura/default_i.asp">Mappa Amministrazione</a></li>
+								<li><a href="https://www.regione.vda.it/amministrazione/atti/default_i.aspx">Provvedimenti dirigenziali</a></li>
+								<li><a href="https://www.regione.vda.it/rapporti_istituzionali/default_i.aspx">Rapporti istituzionali</a></li>						
+								
+							</ul>
+						</div>
+						<div class="footer_main_menu_col">
+							<h3>Canali tematici</h3>
+							<ul>
+								<li><a href="https://www.regione.vda.it/affari_legislativi/default_i.asp">Affari legislativi</a></li>					
+								<li><a href="https://www.regione.vda.it/agricoltura/default_i.asp">Agricoltura</a></li>
+								<li><a href="https://www.regione.vda.it/artigianato/default_i.asp">Artigianato di tradizione</a></li>
+								<li><a href="https://www.regione.vda.it/finanze/default_i.asp">Bilancio, finanze e patrimonio</a></li>
+								<li><a href="https://www.regione.vda.it/coopsviluppo/default_i.asp">Cooperazione allo sviluppo</a></li>
+								<li><a href="https://www.regione.vda.it/corpoforestale/default_i.asp">Corpo Forestale della Valle d'Aosta</a></li>
+								<li><a href="https://www.regione.vda.it/vvf/default_i.asp">Corpo Valdostano dei Vigili del fuoco</a></li>
+								<li><a href="https://www.regione.vda.it/cultura/default_i.asp">Cultura</a></li>
+								<li><a href="http://centraleunica.regione.vda.it"  class="targetblank"><span class="vm1">CUS - Centrale Unica del Soccorso</span></a></li>
+								<li><a href="https://www.regione.vda.it/energia/default_i.asp">Energia</a></li>
+								<li><a href="https://www.regione.vda.it/enti_locali/default_i.asp">Enti locali</a></li>	
+								<li><a href="https://www.regione.vda.it/europa">Europa</a></li>
+								<li><a href="https://www.regione.vda.it/europa/europe_direct/default_i.asp">Europe Direct</a></li>
+								<li><a href="https://www.regione.vda.it/formazione_personale_regionale/default_i.aspx">Formazione del personale regionale</a></li>
+								<li><a href="https://www.regione.vda.it/Portale_imprese/default_i.asp">Imprese industriali, artigiane e cooperative</a></li>
+								<li><a href="https://www.regione.vda.it/innovazione">Innovazione</a></li>
+								<li><a href="https://www.regione.vda.it/istruzione/default_i.asp">Istruzione</a></li>
+								<li><a href="https://www.regione.vda.it/lavoro/default_i.aspx">Lavoro</a></li>
+							</ul>
+						</div>
+						<div class="footer_main_menu_col">
+							<ul>
+								<li style="margin-top:2em"><a href="https://meteo.regione.vda.it" class="targetblank"><span class="vm1">Meteo in Valle d'Aosta</span></a></li>
+								<li><a href="https://www.regione.vda.it/nuvv/default_i.asp">NUVV - Valutazione e verifica<br>degli investimenti pubblici</a></li>
+								<li><a href="https://www.regione.vda.it/operepubbliche/default_i.asp">Opere pubbliche</a></li>
+								<li><a href="https://www.regione.vda.it/servsociali/default_i.asp">Politiche sociali</a></li>
+								<li><a href="https://www.regione.vda.it/protezione_civile/default_i.asp">Protezione civile</a></li>
+								<li><a href="https://www.regione.vda.it/risorsenaturali/default_i.asp">Risorse naturali</a></li>					
+								<li><a href="https://www.regione.vda.it/sanita/default_i.asp">Sanit&agrave;</a></li>
+								<li><a href="https://www.regione.vda.it/serviziocivile/default_i.asp">Servizio civile</a></li>
+								<li><a href="https://www.regione.vda.it/servizio_volontario_europeo/default_i.aspx">Servizio volontario europeo</a></li>
+								<li><a href="https://www.regione.vda.it/sport_provv_impianti/default_i.aspx">Sport - Provvidenze ed Impianti</a></li>
+								<li><a href="https://www.regione.vda.it/statistica/default_i.asp">Statistica</a></li>
+								<li><a href="https://www.regione.vda.it/territorio/default_i.asp">Territorio e ambiente</a></li>
+								<li><a href="https://www.regione.vda.it/trasporti/default_i.asp">Trasporti</a></li>
+								<li><a href="https://www.regione.vda.it/finanze/tributi/default_i.asp">Tributi regionali e bollo auto</a></li>
+								<li><a href="https://www.regione.vda.it/asstur/default_i.asp">Turismo</a></li>
+								<li><a href="https://www.lovevda.it/it">Turismo informazioni Lovevda</a></li>
+								<li><a href="https://www.regione.vda.it/pressevda/default_i.asp">Ufficio Stampa - PresseVdA</a></li>
+							</ul>
+						</div>
+
+						<div class="footer_main_menu_col">
+							<h3>Servizi</h3>
+							<ul>
+								<li><a href="https://www.regione.vda.it/trasporti/Agevolazioni_tariffarie/Universitari/default_i.aspx" class="targetblank">Agevolazioni Trasporti studenti universitari</a></li>
+								<li><a href="https://biblio.regione.vda.it/">Biblioteche</a></li>
+								<li><a href="http://biglietteriecastelli.invallee.it/MidaTicketAOSTA/AOL/AOL_Default.aspx" class="targetblank">Biglietteria online Castelli</a></li>
+								<li><a href="https://crrs.regione.vda.it"><span class="vm1">Comitato Regionale Relazioni Sindacali (CRRS)</span></a></li>
+								<li><a href="https://www.regione.vda.it/consigliera_parita/default_i.asp">Consigliera di Parit&agrave;</a></li>
+								<li><a href="https://www.regione.vda.it/giudicedipace/default_i.aspx">Giudice di pace</a></li>
+								<li><a href="https://www.regione.vda.it/statistica/statistiche_per_argomento/prezzi/default_i.asp">Inflazione e prezzi al consumo</a></li>
+								<li class="last"><a href="https://www.regione.vda.it/sanita/prevenzione/sicurezza_alimentare/allerta/elenco_i.asp">Informazioni su Allerta Alimentare</a></li>
+								<li><a href="https://www.regione.vda.it/informazioni_utili/default_i.aspx"><span class="vm1">INFO UTILI</span></a></li>
+								<li><a href="https://www.regione.vda.it/informazioni_utili/elenconewsletter_i.aspx">Newsletters</a></li>
+								<li><a href="https://www.regione.vda.it/TesseraSanitaria_CartaNazionaledeiServizi/default_i.asp">Tessera Sanitaria - Carta nazionale dei servizi</a></li>
+								<li><a href="https://www.regione.vda.it/questionario/default_i.asp">Opinioni e proposte sui servizi Web</a></li>
+								<li><a href="https://www.regione.vda.it/statistica/default_i.asp">Osservatorio economico e sociale</a></li>
+								<li><a href="https://www.regione.vda.it/osservatoriorifiuti">Osservatorio rifiuti</a></li>
+								<li><a href="https://www.regione.vda.it/servsociali/invalidita_civile_i/invalidi_i/default_i.asp">Servizi per invalidi civili</a></li>
+								<li><a href="https://www.lovevda.it/turismo/prima_di_partire/dovesiamo/airport_transfer_i.asp">Servizio prenotazione navette per aeroporti</a></li>
+								<li><a href="https://www.regione.vda.it/prefettura/sportellounicoimmigrazione/default_i.aspx">Sportello Immigrazione</a></li>
+								<li><a href="https://www.regione.vda.it/energia/centro_osservazione_energia/sportello_informativo/default_i.asp">Sportello Informativo Energia</a></li>
+								<li><a href="http://www.sportellounico.vda.it/homepages.asp?l=1" class="targetblank">Sportello Unico per le Imprese</a></li>
+							</ul>
+						</div>
+
+						<div class="footer_main_menu_col">
+							<h3>Avvisi e documenti</h3>
+							<ul>
+								<li><a href="https://appweb.regione.vda.it/dbweb/albonotiziario.nsf">Albo notiziario</a></li>
+								<li><a href="https://appweb.regione.vda.it/DBWeb/territorio/avvisidemanioidrico.nsf/Avvisi?openform&amp;l=ita">Avvisi demanio idrico</a></li>
+								<li><a href="https://appweb.regione.vda.it/dbweb/presidenza/avvisiincarichi.nsf">Avvisi di incarico</a></li>
+								<li><a href="https://appweb.regione.vda.it/DBWeb/bandigara/BandiGar.nsf/BandiInScadenza?openform&l=ITA">Bandi e avvisi</a></li>
+								<li><a href="https://www.regione.vda.it/affari_legislativi/bollettino_ufficiale/default_i.asp">Bollettino ufficiale</a></li>
+								<li><a href="https://www.regione.vda.it/amministrazione/concorsi/default_i.asp">Concorsi</a></li>
+								<li><a href="https://appweb.regione.vda.it/DBWeb/espropri/espropri.nsf/PRESENTAZIONE?openform&amp;l=ITA">Espropri</a></li>
+								
+							</ul>
+						</div>
+						
+						
+					</div>
+			<div id="footer_info">
+                <div id="footer_logo">
+	<a href="https://www.regione.vda.it/default_i.asp"><img src="/wwwtemplate/2012/img/logo_footer.jpg" alt="Sito ufficiale della Regione Autonoma Valle d'Aosta" width="186" height="48" ></a>
+</div>
+<div id="footer_services_menu">
+	<ul>
+		<li><a href="https://www.regione.vda.it/informazioni_utili/contatti_i.asp">Contatti</a></li>
+		<li><a href="https://www.regione.vda.it/informazioni_utili/pec_i.aspx">Posta certificata</a></li>
+		<li><a href="https://www.regione.vda.it/informazioni_utili/migliorare_i.asp">Aiutaci a migliorare</a></li>
+		<!-- <li><a href="https://www.regione.vda.it/informazioni_utili/condizioni_di_utilizzo_i.aspx" title="Condizioni di utilizzo">Condizioni di utilizzo</a></li> -->
+		<li><a href="https://www.regione.vda.it/informazioni_utili/privacy_i.asp" title="Informativa Privacy">Privacy</a></li>
+		<li><a href="https://www.regione.vda.it/informazioni_utili/cookies_i.aspx" title="Informativa sui cookie">Cookie</a></li>
+		<li><a href="https://www.regione.vda.it/informazioni_utili/note_legali_i.asp" title="Note legali">Note legali</a></li>
+		<li class="last"><a href="https://www.regione.vda.it/intranet/default_i.asp">Intranet</a></li>
+	</ul>
+</div>
+<script>
+$( document ).ready(function() {
+	$("#ctl00_intestazione_hLinkHomepage").attr("href", "https://www.regione.vda.it/default_i.asp");
+	$('#ctl00_intestazione_lblTitle').first().replaceWith("<a href='https://www.regione.vda.it/default_i.asp'>" + $('#ctl00_intestazione_lblTitle').text() + "</a>");
+});
+</script>
+				<div id="footer_copy">
+					
+                    Pagina a cura della <a title="Presidenza della Regione" href="/amministrazione/struttura/infomappa_i.asp?codmap=35">Presidenza della Regione</a> &copy; 2000-2013 Regione Autonoma Valle d'Aosta - Aggiornata il <strong>30/05/2014</strong><br>Piazza Deffeyes 1 - 11100 Aosta - Tel. +39 0165 273111 p.iva 00368440079
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr class="nocssdisplay" >
+	<a href="#index" class="nocssdisplay"><span id="ctl00_piedipagina_lblTornasu">Torna su</span></a>
+    <a id="ctl00_piedipagina_hTornasu"></a>
+				
+    
+</div>
+</form>
+</body>
+</html>

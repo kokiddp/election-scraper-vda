@@ -2,6 +2,15 @@
     "name": "kokiddp/election-scraper-vda",
     "type": "library",
     "description": "Libreria per estrarre i dati delle elezioni dal sito della Regione Valle d'Aosta",
+    "license": "MIT",
+    "keywords": [
+        "election",
+        "scraper",
+        "valle d'aosta",
+        "vda",
+        "parser",
+        "dom"
+    ],
     "require": {
         "php": ">=7.4",
         "guzzlehttp/guzzle": "^7.0",

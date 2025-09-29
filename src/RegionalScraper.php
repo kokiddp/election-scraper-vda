@@ -30,27 +30,67 @@ class RegionalScraper extends AbstractHtmlScraper
 
   private function parseRow(\DOMElement $row): ?RegionalResult
   {
-    $cells = $this->xpath->query('.//td', $row);
-    if ($cells->length < 5) {
+    $nodeList = $this->xpath->query('.//td', $row);
+    if (!$nodeList) {
       return null;
     }
+
+    $cells = [];
+    foreach ($nodeList as $cell) {
+      if ($cell instanceof \DOMElement) {
+        $cells[] = $cell;
+      }
+    }
+
+    while (!empty($cells)) {
+      $last = $cells[count($cells) - 1];
+      $text = trim($last->textContent);
+      $hasImage = $this->xpath->query('.//img', $last)->length > 0;
+      if ($text === '' && !$hasImage) {
+        array_pop($cells);
+        continue;
+      }
+      break;
+    }
+
+    if (count($cells) < 4) {
+      return null;
+    }
+
+    $imageCell = $cells[0];
+    $nameCell = $cells[1];
+
+    $dataCells = [];
+    foreach ($cells as $cell) {
+      $class = $cell->getAttribute('class');
+      if ($class !== '' && strpos($class, 'voti-dato') !== false) {
+        $dataCells[] = $cell;
+      }
+    }
+
+    if (count($dataCells) < 4) {
+      return null;
+    }
+
+    $votesCell = $dataCells[0];
+    $percentCell = $dataCells[1];
+    $contestatiCell = $dataCells[2];
+    $seatsCell = $dataCells[3];
+
     $simboloUrl = null;
-    $img = $this->xpath->query('.//img', $cells->item(0))->item(0);
+    $img = $this->xpath->query('.//img', $imageCell)->item(0);
     if ($img instanceof \DOMElement) {
       $simboloUrl = $img->getAttribute('src');
     }
-    $nomeLista = $this->extractNomeLista($cells->item(1));
+    $nomeLista = $this->extractNomeLista($nameCell);
     if (trim($nomeLista)==='') {
       return null;
     }
-    $voti = $this->parseInt($cells->item(2)->textContent);
-    $percent = $this->parseFloat($cells->item(3)->textContent);
-    $contestati = $this->parseInt($cells->item(4)->textContent);
-    $seggi = 0;
-    if ($cells->length>5) {
-      $seggiTxt = trim($cells->item(5)->textContent);
-      $seggi = $seggiTxt==='-'?0:$this->parseInt($seggiTxt);
-    }
+    $voti = $this->parseInt($votesCell->textContent);
+    $percent = $this->parseFloat($percentCell->textContent);
+    $contestati = $this->parseInt($contestatiCell->textContent);
+    $seggiTxt = trim($seatsCell->textContent);
+    $seggi = $seggiTxt==='-'?0:$this->parseInt($seggiTxt);
     return RegionalResult::create($nomeLista, $voti, $percent, $contestati, $seggi, $simboloUrl);
   }
 

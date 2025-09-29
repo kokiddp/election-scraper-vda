@@ -33,7 +33,7 @@ class RegionalScraper extends AbstractHtmlScraper
     ];
   }
 
-  private function extractSummaryStats(): array
+  protected function extractSummaryStats(): array
   {
     $summary = [
       'elettori' => 0,
@@ -117,7 +117,7 @@ class RegionalScraper extends AbstractHtmlScraper
     return $summary;
   }
 
-  private function parseRow(\DOMElement $row): ?RegionalResult
+  protected function parseRow(\DOMElement $row): ?RegionalResult
   {
     $nodeList = $this->xpath->query('.//td', $row);
     if (!$nodeList) {
@@ -183,7 +183,7 @@ class RegionalScraper extends AbstractHtmlScraper
     return RegionalResult::create($nomeLista, $voti, $percent, $contestati, $seggi, $simboloUrl);
   }
 
-  private function extractNomeLista(\DOMElement $cell): string
+  protected function extractNomeLista(\DOMElement $cell): string
   {
     $div = $this->xpath->query('.//div[contains(@style, "font-size")]', $cell)->item(0);
     if ($div) {

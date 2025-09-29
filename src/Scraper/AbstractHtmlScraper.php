@@ -4,6 +4,11 @@ declare(strict_types=1);
 namespace ElectionScraperVdA\Scraper;
 
 use GuzzleHttp\Client;
+use GuzzleHttp\Handler\CurlHandler;
+use GuzzleHttp\Handler\CurlMultiHandler;
+use GuzzleHttp\Handler\Proxy;
+use GuzzleHttp\Handler\StreamHandler;
+use GuzzleHttp\Utils;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\CacheInterface;
 
@@ -36,10 +41,22 @@ abstract class AbstractHtmlScraper implements ScraperInterface
     ?int $psr16Ttl = 300
   )
   {
-    $this->client = $client ?: new Client([
-      'verify' => false,
-      'headers' => ['User-Agent' => 'ElectionScraperVdA/1.0'],
-    ]);
+    if ($client instanceof Client) {
+      $this->client = $client;
+    } else {
+      $handler = $this->resolveHttpHandler();
+
+      $config = [
+        'verify' => false,
+        'headers' => ['User-Agent' => 'ElectionScraperVdA/1.0'],
+      ];
+
+      if ($handler !== null) {
+        $config['handler'] = $handler;
+      }
+
+      $this->client = new Client($config);
+    }
     $this->dom = new \DOMDocument();
     libxml_use_internal_errors(true);
     $this->logger = $logger;
@@ -158,5 +175,62 @@ abstract class AbstractHtmlScraper implements ScraperInterface
       $html = preg_replace('/<head(.*?)>/i', '<head$1><meta charset="UTF-8">', $html, 1) ?? $html;
     }
     return $html;
+  }
+
+  /**
+   * @return callable|null
+   */
+  private function resolveHttpHandler(): ?callable
+  {
+    if (class_exists(Utils::class) && method_exists(Utils::class, 'chooseHandler')) {
+      try {
+        return Utils::chooseHandler();
+      } catch (\Throwable $exception) {
+        $this->logger?->warning('Default Guzzle handler resolution failed', ['error' => $exception->getMessage()]);
+      }
+    }
+
+    return $this->fallbackHandler();
+  }
+
+  /**
+   * @return callable|null
+   */
+  private function fallbackHandler(): ?callable
+  {
+    $handler = null;
+
+    if (\defined('CURLOPT_CUSTOMREQUEST') && \function_exists('curl_version')) {
+      $curlVersion = @curl_version();
+      $version = is_array($curlVersion) && isset($curlVersion['version']) ? $curlVersion['version'] : null;
+
+      if ($version === null || version_compare($version, '7.21.2') >= 0) {
+        $hasCurlExec = \function_exists('curl_exec');
+        $hasCurlMulti = \function_exists('curl_multi_exec');
+
+        if ($hasCurlExec && $hasCurlMulti) {
+          $handler = Proxy::wrapSync(new CurlMultiHandler(), new CurlHandler());
+        } elseif ($hasCurlExec) {
+          $handler = new CurlHandler();
+        } elseif ($hasCurlMulti) {
+          $handler = new CurlMultiHandler();
+        }
+      }
+    }
+
+    $allowUrlFopenRaw = ini_get('allow_url_fopen');
+    $allowUrlFopen = is_string($allowUrlFopenRaw)
+      ? in_array(strtolower($allowUrlFopenRaw), ['1', 'on', 'true', 'yes'], true)
+      : (bool) $allowUrlFopenRaw;
+
+    if ($allowUrlFopen) {
+      return $handler ? Proxy::wrapStreaming($handler, new StreamHandler()) : new StreamHandler();
+    }
+
+    if ($handler === null) {
+      throw new \RuntimeException('Nessun handler HTTP disponibile: abilita l\'estensione cURL o allow_url_fopen.');
+    }
+
+    return $handler;
   }
 }

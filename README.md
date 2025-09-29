@@ -174,7 +174,17 @@ composer install
 ./vendor/bin/phpunit
 ```
 
-La suite (19 test / 82 assertion) copre parsing, edge case HTML, value object e riepiloghi. Gli esempi HTML in `examples/` fungono da fixture di regressione.
+La suite (20 test / 115 assertion) copre parsing, edge case HTML, value object e riepiloghi. Gli esempi HTML in `examples/` fungono da fixture di regressione.
+
+## Prefixed vendor build
+
+Se devi distribuire la libreria all'interno di un PHAR, in un plugin legacy o in un ambiente dove potrebbero verificarsi collisioni con altre dipendenze, puoi generare una build con le librerie di terze parti “prefissate” tramite [PHP-Scoper](https://github.com/humbug/php-scoper).
+
+```bash
+composer build:prefixed
+```
+
+Il comando produce il codice isolato in `build/prefixed/`, mantenendo intatte le classi proprie (`ElectionScraperVdA\`) e le interfacce PSR mentre sposta il resto delle dipendenze sotto il namespace `ElectionScraperVdA\PrefixedVendor`. Copia quella cartella nel tuo artefatto finale e includi l'autoloader generato per evitare conflitti con altre versioni di Guzzle, Symfony o pacchetti PSR presenti nel progetto host.
 
 ## Extending the library
 

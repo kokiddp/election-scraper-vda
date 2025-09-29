@@ -18,10 +18,15 @@
         "psr/simple-cache": "^3.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "^9.6"
+        "phpunit/phpunit": "^9.6",
+        "humbug/php-scoper": "^0.18.17"
     },
     "scripts": {
-        "test": "phpunit"
+        "test": "phpunit",
+        "build:prefixed": [
+            "@php -r \"is_dir('build') || mkdir('build', 0777, true);\"",
+            "php-scoper add-prefix --config=scoper.inc.php"
+        ]
     },
     "autoload": {
         "psr-4": {

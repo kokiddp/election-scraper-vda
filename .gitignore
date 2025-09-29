@@ -25,3 +25,4 @@ Thumbs.db
 
 # Generated artifacts
 examples/parsed_output.json
+build/

@@ -15,11 +15,10 @@ use ElectionScraperVdA\Scraper\AbstractHtmlScraper;
 class ComunalScraper extends AbstractHtmlScraper
 {
   /**
-   * Scarica una pagina tramite Guzzle e restituisce i risultati.
+   * Scarica una pagina tramite l'HTTP client interno e restituisce i risultati.
    * 
    * @param string $url URL della pagina da scaricare
    * @return ComunalResult Risultato dell'elezione comunale
-   * @throws GuzzleException Se il download fallisce
    */
   public function fetch(string $url): ComunalResult
   {

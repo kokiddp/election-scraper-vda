@@ -11,7 +11,7 @@ use ElectionScraperVdA\Model\ComunalResult;
 use ElectionScraperVdA\Model\ComunalCoalitionResult;
 use ElectionScraperVdA\Model\BallottaggioResult;
 use ElectionScraperVdA\Model\RegionalResult;
-use GuzzleHttp\Client;
+use ElectionScraperVdA\Scraper\Http\CurlHttpClient;
 
 // Mapping statico URL -> tipo scraper richiesto (COMUNALI, BALLOTTAGGIO, REGIONALI)
 $urlMap = [
@@ -21,7 +21,7 @@ $urlMap = [
   'https://www.regione.vda.it/amministrazione/Elezioni/Dati_e_risultati/elezioni/VotiComunali_i.aspx?idele=147&ord=1&setcar=n&idcom=22' => 'COMUNALI',
 ];
 
-$client = new Client(['verify' => false, 'headers' => ['User-Agent' => 'ElectionScraperVdA/Script']]);
+$client = new CurlHttpClient(['User-Agent' => 'ElectionScraperVdA/Script']);
 
 $out = [];
 // Helper sanitize defined early for single JSON names
@@ -37,8 +37,7 @@ $symbolBase = 'https://www.regione.vda.it/amministrazione/Elezioni/Dati_e_risult
 
 foreach ($urlMap as $url => $tipo) {
   try {
-    $resp = $client->get($url);
-    $html = (string)$resp->getBody();
+  $html = $client->get($url);
     // Save to examples for inspection
     $fname = __DIR__ . '/../examples/' . preg_replace('/[^a-z0-9]+/i', '_', parse_url($url, PHP_URL_PATH) . '_' . parse_url($url, PHP_URL_QUERY)) . '.html';
     file_put_contents($fname, $html);

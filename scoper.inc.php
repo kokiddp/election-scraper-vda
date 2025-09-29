@@ -10,20 +10,18 @@ return [
             ->files()
             ->ignoreVCS(true)
             ->notName('/\.(zip|phar)$/')
-            ->exclude(['composer', 'bin'])
+            ->exclude(['bin'])
             ->in(__DIR__ . '/vendor')
     ],
     'exclude-namespaces' => [
         'ElectionScraperVdA\\',
         'Psr\\',
+        'Composer\\',
     ],
     'exclude-classes' => [
         'Composer\\Autoload\\ClassLoader',
     ],
-    'exclude-functions' => [
-        'GuzzleHttp\\Psr7\\str',
-        'GuzzleHttp\\Psr7\\uri_for',
-    ],
+    'exclude-functions' => [],
     'exclude-constants' => [],
     'patchers' => [],
 ];

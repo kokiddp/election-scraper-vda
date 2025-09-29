@@ -67,7 +67,7 @@ foreach ($results as $result) {
 ### Requirements
 
 - PHP >= 7.4
-- Estensioni: `ext-dom`, `ext-libxml`
+- Estensioni: `ext-dom`, `ext-libxml` (opzionale ma consigliata: `ext-curl` per download più affidabili)
 - Composer
 
 ### From source
@@ -184,7 +184,7 @@ Se devi distribuire la libreria all'interno di un PHAR, in un plugin legacy o in
 composer build:prefixed
 ```
 
-Il comando produce il codice isolato in `build/prefixed/`, mantenendo intatte le classi proprie (`ElectionScraperVdA\`) e le interfacce PSR mentre sposta il resto delle dipendenze sotto il namespace `ElectionScraperVdA\PrefixedVendor`. Copia quella cartella nel tuo artefatto finale e includi l'autoloader generato per evitare conflitti con altre versioni di Guzzle, Symfony o pacchetti PSR presenti nel progetto host.
+Il comando produce il codice isolato in `build/prefixed/`, mantenendo intatte le classi proprie (`ElectionScraperVdA\`) e le interfacce PSR mentre sposta il resto delle dipendenze sotto il namespace `ElectionScraperVdA\PrefixedVendor`. Copia quella cartella nel tuo artefatto finale e includi l'autoloader generato per evitare conflitti con altre versioni delle stesse librerie di terze parti presenti nel progetto host.
 
 ## Extending the library
 

@@ -20,8 +20,12 @@ class EdgeCaseTest extends TestCase
   public function testRegionalEmpty(): void
   {
     $scraper = new RegionalScraper();
-    $results = $scraper->parseHtml('<html><table><tr class="voti-lista"></tr></table></html>');
-    $this->assertSame([], $results);
+    $payload = $scraper->parseHtml('<html><table><tr class="voti-lista"></tr></table></html>');
+    $this->assertIsArray($payload);
+    $this->assertArrayHasKey('results', $payload);
+    $this->assertArrayHasKey('summary', $payload);
+    $this->assertSame([], $payload['results']);
+    $this->assertIsArray($payload['summary']);
   }
 
   public function testReferendumIncompletePairs(): void

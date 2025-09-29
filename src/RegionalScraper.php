@@ -19,13 +19,102 @@ class RegionalScraper extends AbstractHtmlScraper
 
   protected function doParse(): array
   {
+    $summary = $this->extractSummaryStats();
     $results = [];
     foreach ($this->xpath->query('//tr[@class="voti-lista"]') as $row) {
       if ($r = $this->parseRow($row)) {
         $results[] = $r;
       }
     }
-    return $results;
+
+    return [
+      'results' => $results,
+      'summary' => $summary,
+    ];
+  }
+
+  private function extractSummaryStats(): array
+  {
+    $summary = [
+      'elettori' => 0,
+      'votanti' => 0,
+      'affluenza_percent' => 0.0,
+      'schede_scrutinate' => 0,
+      'schede_scrutinate_percent' => 0.0,
+      'schede_bianche' => 0,
+      'schede_bianche_percent' => 0.0,
+      'schede_nulle' => 0,
+      'schede_nulle_percent' => 0.0,
+    ];
+
+    foreach ($this->xpath->query('//table') as $table) {
+      foreach ($this->xpath->query('.//tr', $table) as $row) {
+        $cells = $this->xpath->query('.//td', $row);
+        if ($cells->length < 2) {
+          continue;
+        }
+
+        $label = trim($cells->item(0)->textContent);
+        $value = trim($cells->item(1)->textContent);
+        $percentage = $cells->length > 2 ? trim($cells->item(2)->textContent) : '';
+        $normalized = function_exists('mb_strtolower') ? mb_strtolower($label) : strtolower($label);
+
+        if ($normalized === '') {
+          continue;
+        }
+
+        if (str_contains($normalized, 'elettor') && $summary['elettori'] === 0) {
+          $summary['elettori'] = $this->parseInt($value);
+          continue;
+        }
+
+        if (str_contains($normalized, 'votanti') && $summary['votanti'] === 0) {
+          $summary['votanti'] = $this->parseInt($value);
+          $summary['affluenza_percent'] = $this->parseFloat($percentage);
+          continue;
+        }
+
+        if (str_contains($normalized, 'scrutinate') && $summary['schede_scrutinate'] === 0) {
+          $summary['schede_scrutinate'] = $this->parseInt($value);
+          $summary['schede_scrutinate_percent'] = $this->parseFloat($percentage);
+          continue;
+        }
+
+        if (str_contains($normalized, 'bianch') && $summary['schede_bianche'] === 0) {
+          $summary['schede_bianche'] = $this->parseInt($value);
+          $summary['schede_bianche_percent'] = $this->parseFloat($percentage);
+          continue;
+        }
+
+        if (str_contains($normalized, 'null') && $summary['schede_nulle'] === 0) {
+          $summary['schede_nulle'] = $this->parseInt($value);
+          $summary['schede_nulle_percent'] = $this->parseFloat($percentage);
+          continue;
+        }
+      }
+    }
+
+    if ($summary['schede_scrutinate'] === 0) {
+      $summary['schede_scrutinate'] = $summary['votanti'];
+    }
+
+    if ($summary['schede_scrutinate_percent'] === 0.0 && $summary['elettori'] > 0) {
+      $summary['schede_scrutinate_percent'] = ($summary['schede_scrutinate'] / $summary['elettori']) * 100;
+    }
+
+    if ($summary['schede_bianche_percent'] === 0.0 && $summary['schede_scrutinate'] > 0 && $summary['schede_bianche'] > 0) {
+      $summary['schede_bianche_percent'] = ($summary['schede_bianche'] / $summary['schede_scrutinate']) * 100;
+    }
+
+    if ($summary['schede_nulle_percent'] === 0.0 && $summary['schede_scrutinate'] > 0 && $summary['schede_nulle'] > 0) {
+      $summary['schede_nulle_percent'] = ($summary['schede_nulle'] / $summary['schede_scrutinate']) * 100;
+    }
+
+    if ($summary['affluenza_percent'] === 0.0 && $summary['elettori'] > 0 && $summary['votanti'] > 0) {
+      $summary['affluenza_percent'] = ($summary['votanti'] / $summary['elettori']) * 100;
+    }
+
+    return $summary;
   }
 
   private function parseRow(\DOMElement $row): ?RegionalResult
